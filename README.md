@@ -1,4 +1,4 @@
-**iOS Reference Architecture**
+### iOS Guidelines
 
 1. [Code Style](Documentation/CodeStyle.md)
 
