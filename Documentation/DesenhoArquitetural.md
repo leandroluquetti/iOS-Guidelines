@@ -10,9 +10,9 @@ Existem ferramentas que auxiliam nesse processo de criação da estrutura de fol
 
 A comunicação entre as camadas pode ser realizada utilizando Delegates ou Blocks como callbacks.
 
-## Camadas**	**
+## Camadas
 
-	Separemos as principais camadas e suas responsabilidades:
+Separemos as principais camadas e suas responsabilidades:
 
 * **View**:
 
