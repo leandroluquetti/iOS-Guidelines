@@ -22,9 +22,9 @@ O padrão [UpperCamelCase](https://en.wikipedia.org/wiki/CamelCase) é recomenda
 
 E para as classes que herdam de um componente do UIKit framework, o nome deve terminar com o nome do componente, exemplo: CITLogin**ViewController**, CITDashboard**View**, CITClients**TableViewController**, CITCards**CollectionViewController**, etc.
 
-    2. **Resources**
+2. **Resources**
 
-        1. **Convenções para Icones:**
+    1. **Convenções para Icones:**
 
 Convenções para Button state:
 
@@ -74,7 +74,7 @@ As propriedades devem ser cadastradas no inicio da classe, com as seguintes regr
 
 ![image alt text](images/codestyle_3.png)
 
-    4. **Métodos**
+4. **Métodos**
 
 A assinatura do método deve ser algo auto explicativa quando lida. Por exemplo o método:
 
@@ -126,7 +126,7 @@ As interfaces de *callback* devem ser o último parâmetro.
 
 * Use *enumerations *para grupos de constantes relacionadas que possuem valores inteiros
 
-		![image alt text](images/codestyle_9.png)
+![image alt text](images/codestyle_9.png)
 
 **2.6.	Delegate Methods**
 
