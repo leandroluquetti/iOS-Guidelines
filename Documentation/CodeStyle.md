@@ -1,6 +1,6 @@
-#Code Style
+# Code Style
 
-##Nomenclaturas de arquivos
+## Nomenclaturas de arquivos
 
 1. **Class**
 
@@ -153,9 +153,7 @@
 [**ObjClean:**](http://objclean.com/index.php)
 
 * [FullVersion](https://checkout.paddle.com/pay/2005746-chrea8fe174f405-b68729dbe7)
-
 * [Free Trial](http://bit.ly/1nI4auv)
-
 * [Template File](https://drive.google.com/a/ciandt.com/file/d/0B-zev7olcxWtZFNkMXUtbFVobDQ/view?usp=sharing)
 
 **Source:** [https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html#//apple_ref/doc/uid/10000146-SW1](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html#//apple_ref/doc/uid/10000146-SW1)
