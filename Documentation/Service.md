@@ -1,4 +1,4 @@
-**Service**
+#Service
 
 Com o propósito de comunicação com o web service utilizamos o AFNetworking como library de alta abastração do [Foundation URL Loading System](http://developer.apple.com/library/mac/#documentation/Cocoa/Conceptual/URLLoadingSystem/URLLoadingSystem.html). O AFNetworking possui uma arquitetura modular e bem desenhada conseguiu simplificar os callbacks e serializações do Foundation URL.
 
@@ -12,19 +12,18 @@ Abaixo podemos conferir como encaixar essa library em nossa arquitetura.
 
 ![image alt text](images/service_1.jpg)
 
-Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-ReferenceArchitecture/tree/master/NetworkSample).
 
 * **CITHTTPSessionProvider (//TODO 1)**
 
-    * Herda a principal classe do AFNetworking. *AFHTTPSessionManager.*
+    * Herda a principal classe do AFNetworking, *AFHTTPSessionManager.*
 
     * Para melhor controle das requisições e configuração do Header aplicamos o *singleton pattern *para garantir a integridade.
 
     * Faça o override do método *initWithBaseURL *e configure o *request* e *response* *serializer*.
 
-![image alt text](images/service_2.png)
+	![image alt text](images/service_2.png)
 
-* **CITHTTPSessionProvicer Category (//TODO 2)**
+* **CITHTTPSessionProvider Category (//TODO 2)**
 
     * Deve se criar uma category exclusiva para cada serviço.
 
@@ -34,4 +33,6 @@ Para melhor entendimento você pode conferir um código exemplo [AQUI](https://g
 
     * Caso sejam poucos parâmetros a serem enviados no body podemos construir o dicionário no método da categoria, porém se for muito complexo essa serialização deverá ficar no modelo.
 
-![image alt text](images/service_3.png)
+	![image alt text](images/service_3.png)
+	
+Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-ReferenceArchitecture/tree/master/NetworkSample).

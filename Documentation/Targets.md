@@ -1,4 +1,4 @@
-## **Targets**
+#Targets
 
 Targets permitem que você tenha configurações específicas para cada ambiente que você tenha.
 
@@ -6,15 +6,15 @@ Um target especifíca um produto e contém instruções para construí-lo a part
 
 Recomendamos targets para facilitar na separação e fácil configuração do ambiente de CI para gerar build para cada ambiente visto que as sessãos de build settings, capabilities, build phases e o plist são exclusivas para cada target.
 
-## ![image alt text](images/target_0.png)
+![image alt text](images/target_0.png)
 
-Criando Targets
+###Criando Targets
 
 O ideal é duplicar o target já existente e então apenas renomear o novo target para algo que faça sentido, geralmente colocamos o NomeDoProjeto_ambiente.
 
 ![image alt text](images/target_1.png)
 
-# Xcode Scheme
+#Xcode Scheme
 
 Um scheme do xCode pode definir a configuração de build, coleção de testes a serem executados, dependência entre targets.
 
@@ -24,7 +24,7 @@ Você pode ter quantos schemes você quiser, mas somente um estará ativo por ve
 
 ![image alt text](images/target_2.png)
 
-# Plist
+#Plist
 
 Cada schema possui o seu plist, ou seja, é um ótimo lugar para adicionar configurações exclusivas de cada target.
 
