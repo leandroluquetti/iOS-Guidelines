@@ -20,10 +20,14 @@ Somente output no debug console em tempo de desenvolvimento. De ser desativo par
 		![image alt text](images/logging_1.png)
 		
 	* Setando o nível de log
+	
 		* Por ambiente
-		![image alt text](images/logging_2.png)
+		
+			![image alt text](images/logging_2.png)
+
 		* Por Logger
-		![image alt text](images/logging_3.png)
+		
+			![image alt text](images/logging_3.png)
 	
 	
 0. [**Answers**](https://docs.fabric.io/ios/answers/index.html)
