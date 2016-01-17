@@ -7,7 +7,7 @@ Texto de introdução...
 1. [Desenho Arquitetural](#desenho-arquitetural)
 1. [Code Style](#code-style)
 1. [Environment](#environment)
-1. [Targets](#targets)
+1. [Building](#building)
 1. [Service](#service)
 1. [Storage](#storage)
 1. [Logging](#logging)
@@ -388,7 +388,9 @@ Quando todo o repositório do seu projeto estiver versionado no SVN recomendamos
 
 Se o repositório for baseado no git pode utilizar [SourceTree](https://www.sourcetreeapp.com) ou [Github Desktop](https://desktop.github.com).
 
-# Targets
+# Building
+
+## Targets
 
 Targets permitem que você tenha configurações específicas para cada ambiente que você tenha.
 
@@ -404,9 +406,9 @@ O ideal é duplicar o target já existente e então apenas renomear o novo targe
 
 ![image alt text](screenshots/target_1.png)
 
-# Xcode Scheme
+## Schemes
 
-Um scheme do xCode pode definir a configuração de build, coleção de testes a serem executados, dependência entre targets.
+Schemes defininem basicamente o que aconte quando clicamos em Run, Test, Profile, Analyze ou Archive. Contem informações como Targets a serem executados, build configuration e launch arguments.
 
 Você pode ter quantos schemes você quiser, mas somente um estará ativo por vez, até mesmo porque esse será o scheme que será utilizar para executar o app, seja o destino o hardware ou o simulador.
 
@@ -414,7 +416,7 @@ Você pode ter quantos schemes você quiser, mas somente um estará ativo por ve
 
 ![image alt text](screenshots/target_2.png)
 
-# Plist
+## Plist
 
 Cada schema possui o seu plist, ou seja, é um ótimo lugar para adicionar configurações exclusivas de cada target.
 
