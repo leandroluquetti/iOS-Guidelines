@@ -462,8 +462,6 @@ Para melhor entendimento você pode conferir um código exemplo [AQUI](https://g
 
 # Storage
 
-# Storage
-
 No iOS temos 4 opções de armazenamento:
 
 * File system
