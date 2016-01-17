@@ -1,5 +1,4 @@
 # iOS Guidelines
-================
 
 Texto de introdução...
 
