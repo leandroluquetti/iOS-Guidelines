@@ -444,7 +444,7 @@ Abaixo podemos conferir como encaixar essa library em nossa arquitetura.
 ![image alt text](screenshots/service_1.jpg)
 
 
-* **CITHTTPSessionProvider (//TODO 1)**
+* **CITHTTPSessionProvider**
 
     * Herda a principal classe do AFNetworking, *AFHTTPSessionManager.*
 
@@ -452,9 +452,45 @@ Abaixo podemos conferir como encaixar essa library em nossa arquitetura.
 
     * Faça o override do método *initWithBaseURL *e configure o *request* e *response* *serializer*.
 
-	![image alt text](screenshots/service_2.png)
+	```objective-c
+	static NSString * const kBaseURL = @"https://api.parse.com";
 
-* **CITHTTPSessionProvider Category (//TODO 2)**
+	@implementation CITHTTPSessionProvider
+		
+	#pragma mark - Singleton
+		
+	+ (instancetype)sharedInstance {
+		
+	    static CITHTTPSessionProvider *_sharedInstance = nil;
+	    
+	    static dispatch_once_t onceToken;
+	    dispatch_once(&onceToken, ^{
+	        NSURL *url = [NSURL URLWithString:kBaseURL];
+	        _sharedInstance = [[CITHTTPSessionProvider alloc] initWithBaseURL:url];
+	    });
+	    
+	    return _sharedInstance;
+	}
+		
+	#pragma mark - Override
+		
+	- (instancetype)initWithBaseURL:(NSURL *)url {
+	    self = [super initWithBaseURL:url];
+	    if (self) {
+	        self.requestSerializer = [AFJSONRequestSerializer serializer];
+	        [self.requestSerializer setValue:@"oUZjvMyLohNCAlAmoi8rWQdUq1MXyDNxHvjTwVUM"
+	                      forHTTPHeaderField:@"X-Parse-Application-Id"];
+	        [self.requestSerializer setValue:@"lr9YZR4n4eJ0DGTlp46rxKgWdlF2V4k3L2djCIoL"
+	                      forHTTPHeaderField:@"X-Parse-REST-API-Key"];
+	        
+	        self.responseSerializer = [AFJSONResponseSerializer serializer];
+	    }
+	    
+	    return self;
+	}
+	```
+
+* **CITHTTPSessionProvider Category**
 
     * Deve se criar uma category exclusiva para cada serviço.
 
@@ -464,7 +500,29 @@ Abaixo podemos conferir como encaixar essa library em nossa arquitetura.
 
     * Caso sejam poucos parâmetros a serem enviados no body podemos construir o dicionário no método da categoria, porém se for muito complexo essa serialização deverá ficar no modelo.
 
-	![image alt text](screenshots/service_3.png)
+	```objective-c
+	#import "CITHTTPSessionManager+Login.h"
+
+	@implementation CITHTTPSessionManager (Login)
+	
+	+ (void)executeLoginWithUsername:(NSString *)username
+	                     andPassword:(NSString *)passwod
+	             withCompletionBlock:(CITServiceRequestSuccessful)completion {
+	
+	    NSDictionary *parameters = @{@"username": username,
+	                                 @"password": passwod};
+	    
+	    [[self sharedInstance] GET:@"/1/login"
+	                    parameters:parameters
+	                       success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+	                           completion(YES);
+	                       } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+	                           completion(NO);
+	                       }];
+	}
+	
+	@end
+	```
 	
 Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-ReferenceArchitecture/tree/master/NetworkSample).
 
