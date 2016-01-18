@@ -1,6 +1,6 @@
 # iOS Guidelines
 
-Texto de introdução...
+Este documento descreve um conjunto de boas práticas e recomendações aplicadas em projetos iOS.
 
 ## Conteúdo
 1. [Desenho Arquitetural](#desenho-arquitetural)
@@ -524,7 +524,7 @@ Abaixo podemos conferir como encaixar essa library em nossa arquitetura.
 	@end
 	```
 	
-Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-ReferenceArchitecture/tree/master/NetworkSample).
+Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-Guidelines/tree/master/Samples/NetworkSample).
 
 # Storage
 
