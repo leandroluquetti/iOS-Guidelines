@@ -1,6 +1,6 @@
 # iOS Guidelines
 
-Texto de introdução...
+Este documento descreve um conjunto de boas práticas e recomendações aplicadas em projetos iOS.
 
 ## Conteúdo
 1. [Desenho Arquitetural](#desenho-arquitetural)
