@@ -389,21 +389,27 @@ Se o repositório for baseado no git pode utilizar [SourceTree](https://www.sour
 
 # Building
 
+## Build Configuration
+
+Build Configuration é uma camada adicional sobre as Build Setting de um Target, onde são especificadas informações como Cetificacados à serem utilizados e até, por exemplo, otimizações em tempo de compilação para debugging quando em Development. Por padrão todo novo projeto já vem com as opções Debug e Release, já configuradas e indicadas pela Apple para Development e App Store/In-house distribution, respectivamente.
+
+![image alt text](screenshots/building_0.png)
+
 ## Targets
 
-Targets permitem que você tenha configurações específicas para cada ambiente que você tenha.
+Targets permitem que você tenha configurações específicas para cada ambiente.
 
 Um target especifíca um produto e contém instruções para construí-lo a partir de um conjunto de arquivos em um projeto ou workspace. Um target é referente a um único produto, porém os source files podem ser compartilhados entre os múltiplos targets que um projeto possa ter.
 
 Recomendamos targets para facilitar na separação e fácil configuração do ambiente de CI para gerar build para cada ambiente visto que as sessãos de build settings, capabilities, build phases e o plist são exclusivas para cada target.
 
-![image alt text](screenshots/target_0.png)
+![image alt text](screenshots/building_1.png)
 
 ### Criando Targets
 
 O ideal é duplicar o target já existente e então apenas renomear o novo target para algo que faça sentido, geralmente colocamos o NomeDoProjeto_ambiente.
 
-![image alt text](screenshots/target_1.png)
+![image alt text](screenshots/building_2.png)
 
 ## Schemes
 
@@ -413,13 +419,15 @@ Você pode ter quantos schemes você quiser, mas somente um estará ativo por ve
 
 É recomendado que se tenha um schema por target de ambiente criado.
 
-![image alt text](screenshots/target_2.png)
+![image alt text](screenshots/building_3.png)
 
 ## Plist
 
 Cada schema possui o seu plist, ou seja, é um ótimo lugar para adicionar configurações exclusivas de cada target.
 
-![image alt text](screenshots/target_3.png)
+![image alt text](screenshots/building_4.png)
+
+Esse sessção é apenas um overview deste tópico, para mais informações vaje a documentação oficial aqui: [iOS Developer Library: Xcode Concepts](https://developer.apple.com/library/ios/featuredarticles/XcodeConcepts)
 
 # Service
 
