@@ -466,7 +466,7 @@ Abaixo podemos conferir como encaixar essa library em nossa arquitetura.
 
 	![image alt text](screenshots/service_3.png)
 	
-Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-ReferenceArchitecture/tree/master/NetworkSample).
+Para melhor entendimento você pode conferir um código exemplo [AQUI](https://github.com/CIT-SWAT/iOS-Guidelines/tree/master/Samples/NetworkSample).
 
 # Storage
 
