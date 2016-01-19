@@ -385,21 +385,36 @@ Utilizamos o [Cocoapods](https://cocoapods.org), construído em ruby, como geren
 
 Para instalar o Cocoapods basta executar o seguinte comando no terminal.
 
-![image alt text](screenshots/environment_0.png)
+```
+$ sudo gem install cocoapods
+```
 
 Após o cocoapods ser instalado, vá na pasta do seu projeto e crie um arquivo nomeado Podfile com a seguinte estrutura
 
-![image alt text](screenshots/environment_1.png)
+```ruby
+plataform :ios, '8.0'
+use_frameworks!
+
+target 'MyApp' do
+	pod 'AFNetworking', '~> 2.6' 
+	pod 'ORStackView', '~> 3.0'
+	pod 'SwiftyJSON', '~> 2.3'
+end
+```
 
 Para incluir as libs que você deseja basta inserir " pod 'LibDesejada', 'versão' " abaixo do target. Para facilitar esse trabalho execute o comando pod init e ele criará a estrutura padrão. É altamente recomendado que use esse comando.
 
 Após criado o Podfile e adicionadas as libraries desejadas execute o seguinte comando
 
-![image alt text](screenshots/environment_2.png)
+```
+$ pod install
+```
 
 Certifique-se de sempre abrir o workspace gerado pelo cocoapods para o projeto.
 
-![image alt text](screenshots/environment_3.png)
+```
+$ open App.xcworkspace
+```
 
 ### Apple Developer Certificate
 
