@@ -214,23 +214,34 @@ Separemos as principais camadas e suas responsabilidades:
     * Sempre iniciar com letra minúscula.
 
     * O nome declarado será o mesmo utilizado pelo getter/setter. Se a propriedade for escrita como um verbo ou substantivo o formato é:
-
-      ![image alt text](screenshots/codestyle_1.png)
+		
+		```objective-c
+		@property (strong) NSString *title;
+		@property (assign) BOOL shwosAlpha;
+		```
 
 	* Se o nome for declarado como um adjetivo, então o nome da propriedade oculta o prefixo *"is", *você deve especificá-lo no get acessor.
 
-		![image alt text](screenshots/codestyle_2.png)
+		```objective-c
+		@property (assign, getter=isEditable) BOOL editable;
+		```
 
 	* Certifique-se de que o nome de uma variável de instancia descreve exatamente o atributo alocado. Não se deve acessar a variável de instancia diretamente, para isso utilize os *"acessor methods"*. Só acessamos uma variável de instancia diretamente nos métodos init e dealloc, para isso faça.
 
-		![image alt text](screenshots/codestyle_3.png)
+		```objective-c
+		@implementation MyClass{
+			BOOL _showsTitle;
+		}
+		```
 
 0. **Métodos**
 
 	A assinatura do método deve ser algo auto explicativa quando lida. Por exemplo o método:
 
-	![image alt text](screenshots/codestyle_4.png)
-
+	```objective-c
+	-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
+	```
+	
 	Se tiramos os parâmetros a assinatura lida seria: **touchesBeganWithEvent**
 
 	O método sempre deve cuidar de pequenas funções, ter um objetivo, caso ultrapasse de 40 linhas pense na possibilidade de separar em outro método sem prejudicar a estrutura.
@@ -265,27 +276,44 @@ Separemos as principais camadas e suas responsabilidades:
 
 	As interfaces de *callback* devem ser o último parâmetro.
 
-	![image alt text](screenshots/codestyle_8.png)
+	```objective-c
+	- (void)someMethod:(NSString *)someParameter witCompletionBlock:(returnType (^)(parameterTypes))blockName;
+	```
 
 0. **Enumerated Constants**
 
 	* Use *enumerations *para grupos de constantes relacionadas que possuem valores inteiros
 
-		![image alt text](screenshots/codestyle_9.png)
+		```objective-c
+		typedef enum _NSMatrixMode {
+		    NSRadioModeMatrix           = 0,
+		    NSHighlightModeMatrix       = 1,
+		    NSListModeMatrix            = 2,
+		    NSTrackModeMatrix           = 3
+		} NSMatrixMode;
+		```
 
 0. **Delegate Methods**
 
 	* Inicie o nome identificando a classe de objeto que está enviando a mensagem.
 
-		![image alt text](screenshots/codestyle_10.png)
+		```objective-c
+		- (BOOL)tableView:(NSTableView *)tableView shouldSelectRow:(int)row;
+		- (BOOL)application:(NSApplication *)sender openFile:(NSString *)filename;
+		```
 
 	* Use "did" ou "will" para métodos invocados para notificar o delegate de que algo aconteceu ou acontecerá.
 
-		![image alt text](screenshots/codestyle_11.png)
+		```objective-c
+		- (void)browserDidScroll:(NSBrowser *)sender;
+		- (NSUndoManager *)windowWillReturnUndoManager:(NSWindow *)window;
+		```
 
 	* Embora você possa usar *"did"* ou *"will"* para métodos que são invocados para perguntar ao delegate para fazer algo a favor de outro objeto, é melhor utilizar *"should"*
 
-		![image alt text](screenshots/codestyle_12.png)
+		```objective-c
+		- (BOOL)windowShouldClose:(id)sender;
+		```
 
 0. **Blocks**
 
@@ -295,11 +323,41 @@ Separemos as principais camadas e suas responsabilidades:
 
 	* **Usando um Block diretamente**
 
-		![image alt text](screenshots/codestyle_14.png)
+		```objective-c
+		char *myCharacters[3] = { "TomJohn", "George", "Charles Condomine" };
+ 
+		qsort_b(myCharacters, 3, sizeof(char *), ^(const void *l, const void *r) {
+		    char *left = *(char **)l;
+		    char *right = *(char **)r;
+		    return strncmp(left, right, 1);
+		});
+		 
+		// myCharacters is now { "Charles Condomine", "George", "TomJohn" }
+		```
 
 	* **Padrões que devem ser evitados**
 
-		![image alt text](screenshots/codestyle_15.png)
+		```objective-c
+		void dontDoThis() {
+		    void (^blockArray[3])(void);  // an array of 3 block references
+		 
+		    for (int i = 0; i < 3; ++i) {
+		        blockArray[i] = ^{ printf("hello, %d\n", i); };
+		        // WRONG: The block literal scope is the "for" loop.
+		    }
+		}
+		 
+		void dontDoThisEither() {
+		    void (^block)(void);
+		 
+		    int i = random():
+		    if (i > 1000) {
+		        block = ^{ printf("got i at: %d\n", i); };
+		        // WRONG: The block literal scope is the "then" clause.
+		    }
+		    // ...
+		}
+		```
 
 [**ObjClean:**](http://objclean.com/index.php)
 
