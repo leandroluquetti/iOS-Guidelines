@@ -65,10 +65,6 @@ Separemos as principais camadas e suas responsabilidades:
 
     * Utilizado quando necessário customizar algum componente já existente, por exemplo: um UIButton que precisa ter uma borda arredondada na cor azul
 
-	**MVC Pattern em iOS**
-
-	![image alt text](screenshots/desenhoarquitetural_1.png)
-
 	**Modelo proposto**
 
 	![image alt text](screenshots/desenhoarquitetural_0.png)
