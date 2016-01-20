@@ -1,0 +1,22 @@
+platform :ios, '8.4'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+
+target 'ReferenceApplicationDev' do
+	pod 'AFNetworking', '~> 2.6.3'
+	pod 'FMDB', '~> 2.6' 
+end
+
+target 'ReferenceApplicationStage' do
+	pod 'AFNetworking', '~> 2.6.3'
+	pod 'FMDB', '~> 2.6'
+end
+
+target 'ReferenceApplicationProd' do
+	pod 'AFNetworking', '~> 2.6.3'
+	pod 'FMDB', '~> 2.6'
+end
+
+target 'ReferenceApplicationTests' do
+
+end
