@@ -23,6 +23,21 @@
 		2AB64C911C50411F00C878CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C8A1C4FDA2300C878CE /* main.m */; };
 		2AB64C921C50412800C878CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C7C1C4FD89B00C878CE /* Assets.xcassets */; };
 		2AB64C931C50412900C878CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C7C1C4FD89B00C878CE /* Assets.xcassets */; };
+		2AB64C981C51044C00C878CE /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C971C51044C00C878CE /* RABaseBO.m */; };
+		2AB64C991C51044C00C878CE /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C971C51044C00C878CE /* RABaseBO.m */; };
+		2AB64C9A1C51044C00C878CE /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C971C51044C00C878CE /* RABaseBO.m */; };
+		2AB64C9D1C51046900C878CE /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C9C1C51046900C878CE /* RABaseViewController.m */; };
+		2AB64C9E1C51046900C878CE /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C9C1C51046900C878CE /* RABaseViewController.m */; };
+		2AB64C9F1C51046900C878CE /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C9C1C51046900C878CE /* RABaseViewController.m */; };
+		2AB64CA21C5104A000C878CE /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA11C5104A000C878CE /* RABaseView.m */; };
+		2AB64CA31C5104A000C878CE /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA11C5104A000C878CE /* RABaseView.m */; };
+		2AB64CA41C5104A000C878CE /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA11C5104A000C878CE /* RABaseView.m */; };
+		2AB64CA71C5104E100C878CE /* RABaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA61C5104E100C878CE /* RABaseProvider.m */; };
+		2AB64CA81C5104E100C878CE /* RABaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA61C5104E100C878CE /* RABaseProvider.m */; };
+		2AB64CA91C5104E100C878CE /* RABaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA61C5104E100C878CE /* RABaseProvider.m */; };
+		2AB64CAC1C5104FD00C878CE /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CAB1C5104FD00C878CE /* RABaseManager.m */; };
+		2AB64CAD1C5104FD00C878CE /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CAB1C5104FD00C878CE /* RABaseManager.m */; };
+		2AB64CAE1C5104FD00C878CE /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CAB1C5104FD00C878CE /* RABaseManager.m */; };
 		55417D0C2B918A82E1ABFF5E /* libPods-ReferenceApplicationStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77169BC40764023DA44729B /* libPods-ReferenceApplicationStage.a */; };
 		683EF1BEA092253EE1AEC4B4 /* libPods-ReferenceApplicationProd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */; };
 		792D21A45B72FCB2A6FE9F09 /* libPods-ReferenceApplicationDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E564017E67BDA813C6221F27 /* libPods-ReferenceApplicationDev.a */; };
@@ -54,6 +69,16 @@
 		2AB64C811C4FD90800C878CE /* ReferenceApplicationProd-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ReferenceApplicationProd-Info.plist"; path = "Supporting Files/ReferenceApplicationProd-Info.plist"; sourceTree = "<group>"; };
 		2AB64C821C4FD90800C878CE /* ReferenceApplicationStage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ReferenceApplicationStage-Info.plist"; path = "Supporting Files/ReferenceApplicationStage-Info.plist"; sourceTree = "<group>"; };
 		2AB64C8A1C4FDA2300C878CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2AB64C961C51044C00C878CE /* RABaseBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseBO.h; sourceTree = "<group>"; };
+		2AB64C971C51044C00C878CE /* RABaseBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseBO.m; sourceTree = "<group>"; };
+		2AB64C9B1C51046900C878CE /* RABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseViewController.h; sourceTree = "<group>"; };
+		2AB64C9C1C51046900C878CE /* RABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseViewController.m; sourceTree = "<group>"; };
+		2AB64CA01C5104A000C878CE /* RABaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseView.h; sourceTree = "<group>"; };
+		2AB64CA11C5104A000C878CE /* RABaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseView.m; sourceTree = "<group>"; };
+		2AB64CA51C5104E100C878CE /* RABaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseProvider.h; sourceTree = "<group>"; };
+		2AB64CA61C5104E100C878CE /* RABaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseProvider.m; sourceTree = "<group>"; };
+		2AB64CAA1C5104FD00C878CE /* RABaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseManager.h; sourceTree = "<group>"; };
+		2AB64CAB1C5104FD00C878CE /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
 		3992C2978840F9BD202617CB /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceApplicationProd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99240C2AC47438915C1C1763 /* Pods-ReferenceApplicationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationDev/Pods-ReferenceApplicationDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +195,8 @@
 		2AB64C6C1C4FD50500C878CE /* Business */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64C961C51044C00C878CE /* RABaseBO.h */,
+				2AB64C971C51044C00C878CE /* RABaseBO.m */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -177,6 +204,8 @@
 		2AB64C6D1C4FD50500C878CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64C9B1C51046900C878CE /* RABaseViewController.h */,
+				2AB64C9C1C51046900C878CE /* RABaseViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +222,8 @@
 		2AB64C6F1C4FD50500C878CE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CAA1C5104FD00C878CE /* RABaseManager.h */,
+				2AB64CAB1C5104FD00C878CE /* RABaseManager.m */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -207,6 +238,8 @@
 		2AB64C711C4FD50500C878CE /* Provider */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CA51C5104E100C878CE /* RABaseProvider.h */,
+				2AB64CA61C5104E100C878CE /* RABaseProvider.m */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -221,6 +254,8 @@
 		2AB64C731C4FD50500C878CE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CA01C5104A000C878CE /* RABaseView.h */,
+				2AB64CA11C5104A000C878CE /* RABaseView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -345,6 +380,7 @@
 		2AB64C171C4FC45400C878CE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = RA;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "CI&T";
 				TargetAttributes = {
@@ -561,8 +597,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB64CA41C5104A000C878CE /* RABaseView.m in Sources */,
 				2AB64C8B1C4FDA2300C878CE /* main.m in Sources */,
 				2AB64C771C4FD60D00C878CE /* AppDelegate.m in Sources */,
+				2AB64C9F1C51046900C878CE /* RABaseViewController.m in Sources */,
+				2AB64CA91C5104E100C878CE /* RABaseProvider.m in Sources */,
+				2AB64C9A1C51044C00C878CE /* RABaseBO.m in Sources */,
+				2AB64CAE1C5104FD00C878CE /* RABaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,8 +619,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB64CA21C5104A000C878CE /* RABaseView.m in Sources */,
 				2AB64C911C50411F00C878CE /* main.m in Sources */,
 				2AB64C8F1C50411700C878CE /* AppDelegate.m in Sources */,
+				2AB64C9D1C51046900C878CE /* RABaseViewController.m in Sources */,
+				2AB64CA71C5104E100C878CE /* RABaseProvider.m in Sources */,
+				2AB64C981C51044C00C878CE /* RABaseBO.m in Sources */,
+				2AB64CAC1C5104FD00C878CE /* RABaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,8 +633,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AB64CA31C5104A000C878CE /* RABaseView.m in Sources */,
 				2AB64C901C50411F00C878CE /* main.m in Sources */,
 				2AB64C8E1C50411600C878CE /* AppDelegate.m in Sources */,
+				2AB64C9E1C51046900C878CE /* RABaseViewController.m in Sources */,
+				2AB64CA81C5104E100C878CE /* RABaseProvider.m in Sources */,
+				2AB64C991C51044C00C878CE /* RABaseBO.m in Sources */,
+				2AB64CAD1C5104FD00C878CE /* RABaseManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
