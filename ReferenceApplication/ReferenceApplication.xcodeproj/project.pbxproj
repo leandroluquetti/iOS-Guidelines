@@ -79,6 +79,8 @@
 		2AB64CA61C5104E100C878CE /* RABaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseProvider.m; sourceTree = "<group>"; };
 		2AB64CAA1C5104FD00C878CE /* RABaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseManager.h; sourceTree = "<group>"; };
 		2AB64CAB1C5104FD00C878CE /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
+		2AB64CB61C5189B400C878CE /* RALogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALogging.h; sourceTree = "<group>"; };
+		2AB64CB81C518FAF00C878CE /* ReferenceApplication-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ReferenceApplication-PrefixHeader.pch"; path = "Supporting Files/ReferenceApplication-PrefixHeader.pch"; sourceTree = "<group>"; };
 		3992C2978840F9BD202617CB /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceApplicationProd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99240C2AC47438915C1C1763 /* Pods-ReferenceApplicationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationDev/Pods-ReferenceApplicationDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 		2AB64C221C4FC45400C878CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CB81C518FAF00C878CE /* ReferenceApplication-PrefixHeader.pch */,
 				2AB64C8A1C4FDA2300C878CE /* main.m */,
 				2AB64C801C4FD90800C878CE /* ReferenceApplicationDev-Info.plist */,
 				2AB64C811C4FD90800C878CE /* ReferenceApplicationProd-Info.plist */,
@@ -213,6 +216,7 @@
 		2AB64C6E1C4FD50500C878CE /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CB51C51897C00C878CE /* Logging */,
 				2AB64C751C4FD60D00C878CE /* AppDelegate.h */,
 				2AB64C761C4FD60D00C878CE /* AppDelegate.m */,
 			);
@@ -263,11 +267,27 @@
 		2AB64C741C4FD54000C878CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CAF1C5186B200C878CE /* Storyboards */,
 				2AB64C7C1C4FD89B00C878CE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2AB64CAF1C5186B200C878CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				2AB64C2B1C4FC45400C878CE /* Main.storyboard */,
 				2AB64C301C4FC45400C878CE /* LaunchScreen.storyboard */,
 			);
-			path = Resources;
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2AB64CB51C51897C00C878CE /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				2AB64CB61C5189B400C878CE /* RALogging.h */,
+			);
+			path = Logging;
 			sourceTree = "<group>";
 		};
 		726C57A204041B0FD503B8CD /* Frameworks */ = {
@@ -701,6 +721,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReferenceApplication/Supporting Files/ReferenceApplication-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -743,6 +765,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReferenceApplication/Supporting Files/ReferenceApplication-PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
