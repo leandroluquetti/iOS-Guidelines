@@ -115,6 +115,18 @@
 		2AE386131C52A1AA001C8ED4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		2AE3861A1C52A365001C8ED4 /* RALoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginManager.h; sourceTree = "<group>"; };
 		2AE3861B1C52A365001C8ED4 /* RALoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginManager.m; sourceTree = "<group>"; };
+		2AB64C961C51044C00C878CE /* RABaseBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseBO.h; sourceTree = "<group>"; };
+		2AB64C971C51044C00C878CE /* RABaseBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseBO.m; sourceTree = "<group>"; };
+		2AB64C9B1C51046900C878CE /* RABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseViewController.h; sourceTree = "<group>"; };
+		2AB64C9C1C51046900C878CE /* RABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseViewController.m; sourceTree = "<group>"; };
+		2AB64CA01C5104A000C878CE /* RABaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseView.h; sourceTree = "<group>"; };
+		2AB64CA11C5104A000C878CE /* RABaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseView.m; sourceTree = "<group>"; };
+		2AB64CA51C5104E100C878CE /* RABaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseProvider.h; sourceTree = "<group>"; };
+		2AB64CA61C5104E100C878CE /* RABaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseProvider.m; sourceTree = "<group>"; };
+		2AB64CAA1C5104FD00C878CE /* RABaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseManager.h; sourceTree = "<group>"; };
+		2AB64CAB1C5104FD00C878CE /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
+		2AB64CB61C5189B400C878CE /* RALogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALogging.h; sourceTree = "<group>"; };
+		2AB64CB81C518FAF00C878CE /* ReferenceApplication-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ReferenceApplication-PrefixHeader.pch"; path = "Supporting Files/ReferenceApplication-PrefixHeader.pch"; sourceTree = "<group>"; };
 		3992C2978840F9BD202617CB /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceApplicationProd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99240C2AC47438915C1C1763 /* Pods-ReferenceApplicationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationDev/Pods-ReferenceApplicationDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -250,6 +262,7 @@
 		2AB64C6E1C4FD50500C878CE /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CB51C51897C00C878CE /* Logging */,
 				2AB64C751C4FD60D00C878CE /* AppDelegate.h */,
 				2AB64C761C4FD60D00C878CE /* AppDelegate.m */,
 				2AB64CB51C51897C00C878CE /* Logging */,
