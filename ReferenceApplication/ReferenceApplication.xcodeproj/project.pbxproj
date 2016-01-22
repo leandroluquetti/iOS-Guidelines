@@ -23,21 +23,42 @@
 		2AB64C911C50411F00C878CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C8A1C4FDA2300C878CE /* main.m */; };
 		2AB64C921C50412800C878CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C7C1C4FD89B00C878CE /* Assets.xcassets */; };
 		2AB64C931C50412900C878CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2AB64C7C1C4FD89B00C878CE /* Assets.xcassets */; };
-		2AB64C981C51044C00C878CE /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C971C51044C00C878CE /* RABaseBO.m */; };
-		2AB64C991C51044C00C878CE /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C971C51044C00C878CE /* RABaseBO.m */; };
-		2AB64C9A1C51044C00C878CE /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C971C51044C00C878CE /* RABaseBO.m */; };
-		2AB64C9D1C51046900C878CE /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C9C1C51046900C878CE /* RABaseViewController.m */; };
-		2AB64C9E1C51046900C878CE /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C9C1C51046900C878CE /* RABaseViewController.m */; };
-		2AB64C9F1C51046900C878CE /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64C9C1C51046900C878CE /* RABaseViewController.m */; };
-		2AB64CA21C5104A000C878CE /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA11C5104A000C878CE /* RABaseView.m */; };
-		2AB64CA31C5104A000C878CE /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA11C5104A000C878CE /* RABaseView.m */; };
-		2AB64CA41C5104A000C878CE /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA11C5104A000C878CE /* RABaseView.m */; };
-		2AB64CA71C5104E100C878CE /* RABaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA61C5104E100C878CE /* RABaseProvider.m */; };
-		2AB64CA81C5104E100C878CE /* RABaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA61C5104E100C878CE /* RABaseProvider.m */; };
-		2AB64CA91C5104E100C878CE /* RABaseProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CA61C5104E100C878CE /* RABaseProvider.m */; };
-		2AB64CAC1C5104FD00C878CE /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CAB1C5104FD00C878CE /* RABaseManager.m */; };
-		2AB64CAD1C5104FD00C878CE /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CAB1C5104FD00C878CE /* RABaseManager.m */; };
-		2AB64CAE1C5104FD00C878CE /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AB64CAB1C5104FD00C878CE /* RABaseManager.m */; };
+		2AE385D01C528D58001C8ED4 /* RAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385CF1C528D58001C8ED4 /* RAUser.m */; };
+		2AE385D11C528D58001C8ED4 /* RAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385CF1C528D58001C8ED4 /* RAUser.m */; };
+		2AE385D21C528D58001C8ED4 /* RAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385CF1C528D58001C8ED4 /* RAUser.m */; };
+		2AE385D61C52908F001C8ED4 /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385D51C52908F001C8ED4 /* RABaseViewController.m */; };
+		2AE385D71C52908F001C8ED4 /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385D51C52908F001C8ED4 /* RABaseViewController.m */; };
+		2AE385D81C52908F001C8ED4 /* RABaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385D51C52908F001C8ED4 /* RABaseViewController.m */; };
+		2AE385DC1C5290C5001C8ED4 /* RALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385DB1C5290C5001C8ED4 /* RALoginViewController.m */; };
+		2AE385DD1C5290C5001C8ED4 /* RALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385DB1C5290C5001C8ED4 /* RALoginViewController.m */; };
+		2AE385DE1C5290C5001C8ED4 /* RALoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385DB1C5290C5001C8ED4 /* RALoginViewController.m */; };
+		2AE385E21C529109001C8ED4 /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385E11C529109001C8ED4 /* RABaseManager.m */; };
+		2AE385E31C529109001C8ED4 /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385E11C529109001C8ED4 /* RABaseManager.m */; };
+		2AE385E41C529109001C8ED4 /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385E11C529109001C8ED4 /* RABaseManager.m */; };
+		2AE385EE1C5291CE001C8ED4 /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* RABaseView.m */; };
+		2AE385EF1C5291CE001C8ED4 /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* RABaseView.m */; };
+		2AE385F01C5291CE001C8ED4 /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* RABaseView.m */; };
+		2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
+		2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
+		2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
+		2AE385FC1C52A10F001C8ED4 /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */; };
+		2AE385FD1C52A10F001C8ED4 /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */; };
+		2AE385FE1C52A10F001C8ED4 /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */; };
+		2AE386011C52A12D001C8ED4 /* RAUserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386001C52A12D001C8ED4 /* RAUserBO.m */; };
+		2AE386021C52A12D001C8ED4 /* RAUserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386001C52A12D001C8ED4 /* RAUserBO.m */; };
+		2AE386031C52A12D001C8ED4 /* RAUserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386001C52A12D001C8ED4 /* RAUserBO.m */; };
+		2AE3860A1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */; };
+		2AE3860B1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */; };
+		2AE3860C1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */; };
+		2AE3860D1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */; };
+		2AE3860E1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */; };
+		2AE3860F1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */; };
+		2AE386141C52A1AA001C8ED4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386131C52A1AA001C8ED4 /* LICENSE */; };
+		2AE386151C52A1AA001C8ED4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386131C52A1AA001C8ED4 /* LICENSE */; };
+		2AE386161C52A1AA001C8ED4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386131C52A1AA001C8ED4 /* LICENSE */; };
+		2AE3861C1C52A365001C8ED4 /* RALoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3861B1C52A365001C8ED4 /* RALoginManager.m */; };
+		2AE3861D1C52A365001C8ED4 /* RALoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3861B1C52A365001C8ED4 /* RALoginManager.m */; };
+		2AE3861E1C52A365001C8ED4 /* RALoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3861B1C52A365001C8ED4 /* RALoginManager.m */; };
 		55417D0C2B918A82E1ABFF5E /* libPods-ReferenceApplicationStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77169BC40764023DA44729B /* libPods-ReferenceApplicationStage.a */; };
 		683EF1BEA092253EE1AEC4B4 /* libPods-ReferenceApplicationProd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */; };
 		792D21A45B72FCB2A6FE9F09 /* libPods-ReferenceApplicationDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E564017E67BDA813C6221F27 /* libPods-ReferenceApplicationDev.a */; };
@@ -69,16 +90,31 @@
 		2AB64C811C4FD90800C878CE /* ReferenceApplicationProd-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ReferenceApplicationProd-Info.plist"; path = "Supporting Files/ReferenceApplicationProd-Info.plist"; sourceTree = "<group>"; };
 		2AB64C821C4FD90800C878CE /* ReferenceApplicationStage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "ReferenceApplicationStage-Info.plist"; path = "Supporting Files/ReferenceApplicationStage-Info.plist"; sourceTree = "<group>"; };
 		2AB64C8A1C4FDA2300C878CE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2AB64C961C51044C00C878CE /* RABaseBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseBO.h; sourceTree = "<group>"; };
-		2AB64C971C51044C00C878CE /* RABaseBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseBO.m; sourceTree = "<group>"; };
-		2AB64C9B1C51046900C878CE /* RABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseViewController.h; sourceTree = "<group>"; };
-		2AB64C9C1C51046900C878CE /* RABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseViewController.m; sourceTree = "<group>"; };
-		2AB64CA01C5104A000C878CE /* RABaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseView.h; sourceTree = "<group>"; };
-		2AB64CA11C5104A000C878CE /* RABaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseView.m; sourceTree = "<group>"; };
-		2AB64CA51C5104E100C878CE /* RABaseProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseProvider.h; sourceTree = "<group>"; };
-		2AB64CA61C5104E100C878CE /* RABaseProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseProvider.m; sourceTree = "<group>"; };
-		2AB64CAA1C5104FD00C878CE /* RABaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseManager.h; sourceTree = "<group>"; };
-		2AB64CAB1C5104FD00C878CE /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
+		2AB64CB61C5189B400C878CE /* RALogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALogging.h; sourceTree = "<group>"; };
+		2AB64CB81C518FAF00C878CE /* ReferenceApplication-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "ReferenceApplication-PrefixHeader.pch"; path = "Supporting Files/ReferenceApplication-PrefixHeader.pch"; sourceTree = "<group>"; };
+		2AE385CE1C528D58001C8ED4 /* RAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAUser.h; sourceTree = "<group>"; };
+		2AE385CF1C528D58001C8ED4 /* RAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAUser.m; sourceTree = "<group>"; };
+		2AE385D41C52908F001C8ED4 /* RABaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseViewController.h; sourceTree = "<group>"; };
+		2AE385D51C52908F001C8ED4 /* RABaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseViewController.m; sourceTree = "<group>"; };
+		2AE385DA1C5290C5001C8ED4 /* RALoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginViewController.h; sourceTree = "<group>"; };
+		2AE385DB1C5290C5001C8ED4 /* RALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginViewController.m; sourceTree = "<group>"; };
+		2AE385E01C529109001C8ED4 /* RABaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseManager.h; sourceTree = "<group>"; };
+		2AE385E11C529109001C8ED4 /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
+		2AE385EC1C5291CE001C8ED4 /* RABaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseView.h; sourceTree = "<group>"; };
+		2AE385ED1C5291CE001C8ED4 /* RABaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseView.m; sourceTree = "<group>"; };
+		2AE385F21C5291FD001C8ED4 /* RALoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginView.h; sourceTree = "<group>"; };
+		2AE385F31C5291FD001C8ED4 /* RALoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginView.m; sourceTree = "<group>"; };
+		2AE385FA1C52A10F001C8ED4 /* RABaseBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseBO.h; sourceTree = "<group>"; };
+		2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseBO.m; sourceTree = "<group>"; };
+		2AE385FF1C52A12D001C8ED4 /* RAUserBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAUserBO.h; sourceTree = "<group>"; };
+		2AE386001C52A12D001C8ED4 /* RAUserBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAUserBO.m; sourceTree = "<group>"; };
+		2AE386051C52A19A001C8ED4 /* RAHTTPSessionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAHTTPSessionProvider.h; sourceTree = "<group>"; };
+		2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAHTTPSessionProvider.m; sourceTree = "<group>"; };
+		2AE386081C52A19A001C8ED4 /* RAHTTPSessionProvider+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAHTTPSessionProvider+User.h"; sourceTree = "<group>"; };
+		2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAHTTPSessionProvider+User.m"; sourceTree = "<group>"; };
+		2AE386131C52A1AA001C8ED4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2AE3861A1C52A365001C8ED4 /* RALoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginManager.h; sourceTree = "<group>"; };
+		2AE3861B1C52A365001C8ED4 /* RALoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginManager.m; sourceTree = "<group>"; };
 		3992C2978840F9BD202617CB /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceApplicationProd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99240C2AC47438915C1C1763 /* Pods-ReferenceApplicationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationDev/Pods-ReferenceApplicationDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -160,6 +196,7 @@
 		2AB64C221C4FC45400C878CE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CB81C518FAF00C878CE /* ReferenceApplication-PrefixHeader.pch */,
 				2AB64C8A1C4FDA2300C878CE /* main.m */,
 				2AB64C801C4FD90800C878CE /* ReferenceApplicationDev-Info.plist */,
 				2AB64C811C4FD90800C878CE /* ReferenceApplicationProd-Info.plist */,
@@ -180,14 +217,14 @@
 		2AB64C6B1C4FD50500C878CE /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				2AB64C6C1C4FD50500C878CE /* Business */,
-				2AB64C6D1C4FD50500C878CE /* Controller */,
-				2AB64C6E1C4FD50500C878CE /* Infrastructure */,
-				2AB64C6F1C4FD50500C878CE /* Manager */,
-				2AB64C701C4FD50500C878CE /* Model */,
-				2AB64C711C4FD50500C878CE /* Provider */,
-				2AB64C721C4FD50500C878CE /* Security */,
 				2AB64C731C4FD50500C878CE /* View */,
+				2AB64C6D1C4FD50500C878CE /* Controller */,
+				2AB64C6F1C4FD50500C878CE /* Manager */,
+				2AB64C6C1C4FD50500C878CE /* Business */,
+				2AB64C711C4FD50500C878CE /* Provider */,
+				2AB64C701C4FD50500C878CE /* Model */,
+				2AB64C6E1C4FD50500C878CE /* Infrastructure */,
+				2AB64C721C4FD50500C878CE /* Security */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -195,8 +232,8 @@
 		2AB64C6C1C4FD50500C878CE /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				2AB64C961C51044C00C878CE /* RABaseBO.h */,
-				2AB64C971C51044C00C878CE /* RABaseBO.m */,
+				2AE385F91C52A10F001C8ED4 /* Base */,
+				2AE385F81C52A0F1001C8ED4 /* User */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -204,8 +241,8 @@
 		2AB64C6D1C4FD50500C878CE /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				2AB64C9B1C51046900C878CE /* RABaseViewController.h */,
-				2AB64C9C1C51046900C878CE /* RABaseViewController.m */,
+				2AE385D31C52908F001C8ED4 /* Base */,
+				2AE385D91C52909D001C8ED4 /* Login */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +252,7 @@
 			children = (
 				2AB64C751C4FD60D00C878CE /* AppDelegate.h */,
 				2AB64C761C4FD60D00C878CE /* AppDelegate.m */,
+				2AB64CB51C51897C00C878CE /* Logging */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -222,8 +260,8 @@
 		2AB64C6F1C4FD50500C878CE /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				2AB64CAA1C5104FD00C878CE /* RABaseManager.h */,
-				2AB64CAB1C5104FD00C878CE /* RABaseManager.m */,
+				2AE385DF1C529109001C8ED4 /* Base */,
+				2AE386191C52A34D001C8ED4 /* Login */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -231,6 +269,7 @@
 		2AB64C701C4FD50500C878CE /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2AE385CD1C528D45001C8ED4 /* User */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -238,8 +277,9 @@
 		2AB64C711C4FD50500C878CE /* Provider */ = {
 			isa = PBXGroup;
 			children = (
-				2AB64CA51C5104E100C878CE /* RABaseProvider.h */,
-				2AB64CA61C5104E100C878CE /* RABaseProvider.m */,
+				2AE386171C52A1B9001C8ED4 /* Database */,
+				2AE386041C52A19A001C8ED4 /* Service */,
+				2AE386101C52A1AA001C8ED4 /* Third Party */,
 			);
 			path = Provider;
 			sourceTree = "<group>";
@@ -254,8 +294,9 @@
 		2AB64C731C4FD50500C878CE /* View */ = {
 			isa = PBXGroup;
 			children = (
-				2AB64CA01C5104A000C878CE /* RABaseView.h */,
-				2AB64CA11C5104A000C878CE /* RABaseView.m */,
+				2AE385F71C52947A001C8ED4 /* UI Components */,
+				2AE385EB1C5291CE001C8ED4 /* Base */,
+				2AE385F11C5291D5001C8ED4 /* Login */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -263,11 +304,173 @@
 		2AB64C741C4FD54000C878CE /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2AB64CAF1C5186B200C878CE /* Storyboards */,
 				2AB64C7C1C4FD89B00C878CE /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2AB64CAF1C5186B200C878CE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
 				2AB64C2B1C4FC45400C878CE /* Main.storyboard */,
 				2AB64C301C4FC45400C878CE /* LaunchScreen.storyboard */,
 			);
-			path = Resources;
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
+		2AB64CB51C51897C00C878CE /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				2AB64CB61C5189B400C878CE /* RALogging.h */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		2AE385CD1C528D45001C8ED4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385CE1C528D58001C8ED4 /* RAUser.h */,
+				2AE385CF1C528D58001C8ED4 /* RAUser.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2AE385D31C52908F001C8ED4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385D41C52908F001C8ED4 /* RABaseViewController.h */,
+				2AE385D51C52908F001C8ED4 /* RABaseViewController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2AE385D91C52909D001C8ED4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385DA1C5290C5001C8ED4 /* RALoginViewController.h */,
+				2AE385DB1C5290C5001C8ED4 /* RALoginViewController.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2AE385DF1C529109001C8ED4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385E01C529109001C8ED4 /* RABaseManager.h */,
+				2AE385E11C529109001C8ED4 /* RABaseManager.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2AE385EB1C5291CE001C8ED4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385EC1C5291CE001C8ED4 /* RABaseView.h */,
+				2AE385ED1C5291CE001C8ED4 /* RABaseView.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2AE385F11C5291D5001C8ED4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385F21C5291FD001C8ED4 /* RALoginView.h */,
+				2AE385F31C5291FD001C8ED4 /* RALoginView.m */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2AE385F71C52947A001C8ED4 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		2AE385F81C52A0F1001C8ED4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385FF1C52A12D001C8ED4 /* RAUserBO.h */,
+				2AE386001C52A12D001C8ED4 /* RAUserBO.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2AE385F91C52A10F001C8ED4 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				2AE385FA1C52A10F001C8ED4 /* RABaseBO.h */,
+				2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		2AE386041C52A19A001C8ED4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386051C52A19A001C8ED4 /* RAHTTPSessionProvider.h */,
+				2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */,
+				2AE386071C52A19A001C8ED4 /* User */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		2AE386071C52A19A001C8ED4 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386081C52A19A001C8ED4 /* RAHTTPSessionProvider+User.h */,
+				2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		2AE386101C52A1AA001C8ED4 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386111C52A1AA001C8ED4 /* CITFramework */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		2AE386111C52A1AA001C8ED4 /* CITFramework */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386121C52A1AA001C8ED4 /* CITDatabase */,
+				2AE386131C52A1AA001C8ED4 /* LICENSE */,
+			);
+			path = CITFramework;
+			sourceTree = "<group>";
+		};
+		2AE386121C52A1AA001C8ED4 /* CITDatabase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CITDatabase;
+			sourceTree = "<group>";
+		};
+		2AE386171C52A1B9001C8ED4 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386181C52A1B9001C8ED4 /* Setup */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		2AE386181C52A1B9001C8ED4 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Setup;
+			sourceTree = "<group>";
+		};
+		2AE386191C52A34D001C8ED4 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3861A1C52A365001C8ED4 /* RALoginManager.h */,
+				2AE3861B1C52A365001C8ED4 /* RALoginManager.m */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 		726C57A204041B0FD503B8CD /* Frameworks */ = {
@@ -421,6 +624,7 @@
 			files = (
 				2AB64C321C4FC45400C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C2D1C4FC45400C878CE /* Main.storyboard in Resources */,
+				2AE386161C52A1AA001C8ED4 /* LICENSE in Resources */,
 				2AB64C7D1C4FD89B00C878CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +642,7 @@
 			files = (
 				2AB64C551C4FD3C600C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C571C4FD3C600C878CE /* Main.storyboard in Resources */,
+				2AE386141C52A1AA001C8ED4 /* LICENSE in Resources */,
 				2AB64C931C50412900C878CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +653,7 @@
 			files = (
 				2AB64C631C4FD3CA00C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C651C4FD3CA00C878CE /* Main.storyboard in Resources */,
+				2AE386151C52A1AA001C8ED4 /* LICENSE in Resources */,
 				2AB64C921C50412800C878CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -597,13 +803,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB64CA41C5104A000C878CE /* RABaseView.m in Sources */,
+				2AE385D81C52908F001C8ED4 /* RABaseViewController.m in Sources */,
+				2AE3861E1C52A365001C8ED4 /* RALoginManager.m in Sources */,
+				2AE385E41C529109001C8ED4 /* RABaseManager.m in Sources */,
+				2AE3860C1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
 				2AB64C8B1C4FDA2300C878CE /* main.m in Sources */,
+				2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C771C4FD60D00C878CE /* AppDelegate.m in Sources */,
-				2AB64C9F1C51046900C878CE /* RABaseViewController.m in Sources */,
-				2AB64CA91C5104E100C878CE /* RABaseProvider.m in Sources */,
-				2AB64C9A1C51044C00C878CE /* RABaseBO.m in Sources */,
-				2AB64CAE1C5104FD00C878CE /* RABaseManager.m in Sources */,
+				2AE385F01C5291CE001C8ED4 /* RABaseView.m in Sources */,
+				2AE386031C52A12D001C8ED4 /* RAUserBO.m in Sources */,
+				2AE385FE1C52A10F001C8ED4 /* RABaseBO.m in Sources */,
+				2AE385DE1C5290C5001C8ED4 /* RALoginViewController.m in Sources */,
+				2AE3860F1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */,
+				2AE385D21C528D58001C8ED4 /* RAUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -619,13 +831,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB64CA21C5104A000C878CE /* RABaseView.m in Sources */,
+				2AE385D61C52908F001C8ED4 /* RABaseViewController.m in Sources */,
+				2AE3861C1C52A365001C8ED4 /* RALoginManager.m in Sources */,
+				2AE385E21C529109001C8ED4 /* RABaseManager.m in Sources */,
+				2AE3860A1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
 				2AB64C911C50411F00C878CE /* main.m in Sources */,
+				2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C8F1C50411700C878CE /* AppDelegate.m in Sources */,
-				2AB64C9D1C51046900C878CE /* RABaseViewController.m in Sources */,
-				2AB64CA71C5104E100C878CE /* RABaseProvider.m in Sources */,
-				2AB64C981C51044C00C878CE /* RABaseBO.m in Sources */,
-				2AB64CAC1C5104FD00C878CE /* RABaseManager.m in Sources */,
+				2AE385EE1C5291CE001C8ED4 /* RABaseView.m in Sources */,
+				2AE386011C52A12D001C8ED4 /* RAUserBO.m in Sources */,
+				2AE385FC1C52A10F001C8ED4 /* RABaseBO.m in Sources */,
+				2AE385DC1C5290C5001C8ED4 /* RALoginViewController.m in Sources */,
+				2AE3860D1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */,
+				2AE385D01C528D58001C8ED4 /* RAUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,13 +851,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AB64CA31C5104A000C878CE /* RABaseView.m in Sources */,
+				2AE385D71C52908F001C8ED4 /* RABaseViewController.m in Sources */,
+				2AE3861D1C52A365001C8ED4 /* RALoginManager.m in Sources */,
+				2AE385E31C529109001C8ED4 /* RABaseManager.m in Sources */,
+				2AE3860B1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
 				2AB64C901C50411F00C878CE /* main.m in Sources */,
+				2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C8E1C50411600C878CE /* AppDelegate.m in Sources */,
-				2AB64C9E1C51046900C878CE /* RABaseViewController.m in Sources */,
-				2AB64CA81C5104E100C878CE /* RABaseProvider.m in Sources */,
-				2AB64C991C51044C00C878CE /* RABaseBO.m in Sources */,
-				2AB64CAD1C5104FD00C878CE /* RABaseManager.m in Sources */,
+				2AE385EF1C5291CE001C8ED4 /* RABaseView.m in Sources */,
+				2AE386021C52A12D001C8ED4 /* RAUserBO.m in Sources */,
+				2AE385FD1C52A10F001C8ED4 /* RABaseBO.m in Sources */,
+				2AE385DD1C5290C5001C8ED4 /* RALoginViewController.m in Sources */,
+				2AE3860E1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */,
+				2AE385D11C528D58001C8ED4 /* RAUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -701,6 +925,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReferenceApplication/Supporting Files/ReferenceApplication-PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -743,6 +969,8 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ReferenceApplication/Supporting Files/ReferenceApplication-PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;

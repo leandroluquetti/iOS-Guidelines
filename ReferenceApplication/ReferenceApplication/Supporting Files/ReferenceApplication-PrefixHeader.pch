@@ -1,0 +1,18 @@
+//
+//  ReferenceApplication-PrefixHeader.pch
+//  ReferenceApplication
+//
+//  Created by SalmoJunior on 1/21/16.
+//  Copyright © 2016 CI&T. All rights reserved.
+//
+
+#ifndef ReferenceApplication_PrefixHeader_pch
+#define ReferenceApplication_PrefixHeader_pch
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#endif
+
+#import "RALogging.h"
+
+#endif /* ReferenceApplication_PrefixHeader_pch */

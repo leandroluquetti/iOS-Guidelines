@@ -4,17 +4,23 @@ platform :ios, '8.4'
 
 target 'ReferenceApplicationDev' do
 	pod 'AFNetworking', '~> 2.6.3'
-	pod 'FMDB', '~> 2.6' 
+	pod 'FMDB', '~> 2.6'
+    pod 'SSKeychain'
+    pod 'Reachability'
 end
 
 target 'ReferenceApplicationStage' do
 	pod 'AFNetworking', '~> 2.6.3'
 	pod 'FMDB', '~> 2.6'
+    pod 'SSKeychain'
+    pod 'Reachability'
 end
 
 target 'ReferenceApplicationProd' do
 	pod 'AFNetworking', '~> 2.6.3'
 	pod 'FMDB', '~> 2.6'
+    pod 'SSKeychain'
+    pod 'Reachability'
 end
 
 target 'ReferenceApplicationTests' do
