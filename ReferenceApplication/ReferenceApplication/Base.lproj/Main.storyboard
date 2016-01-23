@@ -9,7 +9,6 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <viewController id="BYZ-38-t0r" customClass="RALoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
@@ -19,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYV-bk-atp" userLabel="FieldsContainerView">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dYV-bk-atp" userLabel="FieldsContainerView" customClass="UIControl">
                                 <rect key="frame" x="183" y="127" width="234" height="164"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Eg-qx-P4f">
@@ -36,7 +35,7 @@
                                             <action selector="executeLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lE2-qE-De7"/>
                                         </connections>
                                     </button>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PM3-74-GlN">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PM3-74-GlN" customClass="RATextField">
                                         <rect key="frame" x="20" y="58" width="194" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="194" id="Oe5-lQ-SIk"/>
@@ -45,7 +44,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="done" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
                                     </textField>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-io-FAX">
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="User" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MsH-io-FAX" customClass="RATextField">
                                         <rect key="frame" x="20" y="20" width="194" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="194" id="kyS-jf-rO1"/>
@@ -66,6 +65,9 @@
                                     <constraint firstAttribute="height" constant="164" id="tmZ-d2-cFh"/>
                                     <constraint firstAttribute="width" constant="234" id="uk4-Fp-htm"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="backgroundTapped:" destination="BYZ-38-t0r" eventType="valueChanged" id="P7g-80-H5L"/>
+                                </connections>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zdF-gA-TZ4">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
@@ -83,12 +85,13 @@
                             <constraint firstItem="zdF-gA-TZ4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="HeO-bi-fOI"/>
                             <constraint firstItem="ldh-KH-laa" firstAttribute="top" secondItem="6Eg-qx-P4f" secondAttribute="top" constant="14" id="JUG-z1-6gJ"/>
                             <constraint firstAttribute="trailingMargin" secondItem="zdF-gA-TZ4" secondAttribute="trailing" constant="-20" id="LdN-4f-NFu"/>
-                            <constraint firstItem="zdF-gA-TZ4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="iuQ-6I-0kP"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zdF-gA-TZ4" secondAttribute="bottom" id="ivR-Hq-JnK"/>
+                            <constraint firstItem="zdF-gA-TZ4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="mDN-sX-DKr"/>
                             <constraint firstItem="dYV-bk-atp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-91" id="nHH-H1-bwH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="zdF-gA-TZ4" secondAttribute="bottom" id="r47-Yh-HrR"/>
                             <constraint firstItem="ldh-KH-laa" firstAttribute="trailing" secondItem="6Eg-qx-P4f" secondAttribute="trailing" constant="-9" id="vPd-vw-3Ld"/>
                         </constraints>
                         <connections>
+                            <action selector="backgroundTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d79-kf-LDJ"/>
                             <outlet property="loadingView" destination="zdF-gA-TZ4" id="yVy-eJ-qBU"/>
                             <outlet property="loginButton" destination="6Eg-qx-P4f" id="4Sd-ww-pK5"/>
                             <outlet property="passwordTextField" destination="PM3-74-GlN" id="Ed4-NF-NNc"/>
@@ -100,6 +103,7 @@
                         <segue destination="bq4-CC-Jfy" kind="show" identifier="fromLoginToDashboard" id="Zag-9j-nP5"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="356" y="207"/>
         </scene>

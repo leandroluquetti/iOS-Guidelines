@@ -45,21 +45,48 @@
 #pragma mark - Actions
 
 - (IBAction)executeLogin:(UIButton *)sender {
-    
     [self.mainView dismissKeyboard];
-    [self.mainView showLoadingView:YES];
-    
+    [self login];
+}
+
+- (IBAction)backgroundTapped:(id)sender {
+    [self.mainView dismissKeyboard];
+}
+
+#pragma mark - Authentication
+
+- (void)login {
     NSString *userText = [self.mainView userText];
     NSString *passwordText = [self.mainView passwordText];
     
-    typeof(self) __weak __block weakSelf = self;
+    BOOL usernameError = ([userText length] <= 0);
+    BOOL passwordError = ([passwordText length] <= 0);
     
-    [self.manager loginWithUsername:userText password:passwordText withCompletionBlock:^(RAUser *user, BOOL success) {
+    BOOL valid = (!usernameError && !passwordError);
+    
+    if (valid) {
+        [self loginWithUsername:userText password:passwordText];
+    } else {
+        if (usernameError) {
+            if (passwordError) {
+                [self.mainView invalidField:RALoginFieldAll];
+            } else {
+                [self.mainView invalidField:RALoginFieldUser];
+            }
+        } else {
+            [self.mainView invalidField:RALoginFieldPassword];
+        }
+    }
+}
+
+- (void)loginWithUsername:(NSString *)username password:(NSString *)password {
+    typeof(self) __weak __block weakSelf = self;
+    [self.mainView showLoadingView:YES];
+    
+    [self.manager loginWithUsername:username password:password withCompletionBlock:^(RAUser *user, BOOL success) {
         [weakSelf handleLoginResponse:success withUser:user];
     }];
 }
-
-#pragma mark - Common
 
 - (void)handleLoginResponse:(BOOL)status withUser:(RAUser *)user {
     [self.mainView showLoadingView:NO];
@@ -67,7 +94,7 @@
     if (status) {
         [self performSegueWithIdentifier:@"fromLoginToDashboard" sender:self];
     } else {
-        [self.mainView invalidFiled:RALoginFieldAll];
+        [self.mainView invalidField:RALoginFieldAll];
     }
 }
 

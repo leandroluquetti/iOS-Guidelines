@@ -21,6 +21,6 @@ typedef NS_ENUM(NSInteger, RALoginFieldType) {
 
 - (void)dismissKeyboard;
 - (void)showLoadingView:(BOOL)show;
-- (void)invalidFiled:(RALoginFieldType)fieldTye;
+- (void)invalidField:(RALoginFieldType)fieldTye;
 
 @end
