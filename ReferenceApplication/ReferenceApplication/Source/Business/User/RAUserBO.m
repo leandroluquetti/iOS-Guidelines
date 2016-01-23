@@ -14,8 +14,8 @@
 + (void)loginWithUsername:(NSString *)user
                  password:(NSString *)password
                   success:(void(^)(RAUser *user))success
-                  failure:(void(^)(NSError *error))failure
-{
+                  failure:(void(^)(NSError *error))failure {
+    
     RAHTTPSessionProvider *sessionManager = [RAHTTPSessionProvider sharedInstance];
     
     [sessionManager loginWithUsername:user

@@ -10,4 +10,12 @@
 
 @implementation RABaseManager
 
+- (NSOperationQueue *)mainQueue {
+    if (!_mainQueue) {
+        _mainQueue = [NSOperationQueue new];
+    }
+    
+    return _mainQueue;
+}
+
 @end

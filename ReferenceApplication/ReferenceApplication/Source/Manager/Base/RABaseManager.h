@@ -10,4 +10,6 @@
 
 @interface RABaseManager : NSObject
 
+@property (strong, nonatomic) NSOperationQueue *mainQueue;
+
 @end

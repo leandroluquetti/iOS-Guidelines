@@ -8,6 +8,19 @@
 
 #import "RABaseView.h"
 
+typedef NS_ENUM(NSInteger, RALoginFieldType) {
+    RALoginFieldUser,
+    RALoginFieldPassword,
+    RALoginFieldAll
+};
+
 @interface RALoginView : RABaseView
+
+- (NSString *)userText;
+- (NSString *)passwordText;
+
+- (void)dismissKeyboard;
+- (void)showLoadingView:(BOOL)show;
+- (void)invalidFiled:(RALoginFieldType)fieldTye;
 
 @end

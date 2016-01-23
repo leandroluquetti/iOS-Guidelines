@@ -7,7 +7,12 @@
 //
 
 #import "RABaseManager.h"
+#import "RAUser.h"
 
 @interface RALoginManager : RABaseManager
+
+- (void)loginWithUsername:(NSString *)user
+                 password:(NSString *)password
+                 withCompletionBlock:(void(^)(RAUser *user, BOOL success))completion;
 
 @end

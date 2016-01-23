@@ -48,8 +48,7 @@ static NSString * const kEndPointVersion = @"1";
 
 #pragma mark - 
 
-- (NSString *)setEndpointVersion:(NSString *)endpoint
-{
+- (NSString *)setEndpointVersion:(NSString *)endpoint {
     NSString *endpointWithVersion = [NSString stringWithFormat:@"/%@/%@", kEndPointVersion, endpoint];
     
     return endpointWithVersion;
