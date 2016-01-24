@@ -92,7 +92,7 @@
     [self.mainView showLoadingView:NO];
     
     if (status) {
-        [self performSegueWithIdentifier:@"fromLoginToDashboard" sender:self];
+        [self performSegueWithIdentifier:kFromLoginViewToWelcomeViewSegue sender:nil];
     } else {
         [self.mainView invalidField:RALoginFieldAll];
     }

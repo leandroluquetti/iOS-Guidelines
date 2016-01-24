@@ -100,22 +100,22 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="8bC-Xf-vdC" id="dgZ-Tf-9Np"/>
-                        <segue destination="bq4-CC-Jfy" kind="show" identifier="fromLoginToDashboard" id="Zag-9j-nP5"/>
+                        <segue destination="bq4-CC-Jfy" kind="custom" identifier="fromLoginViewToWelcomeViewSegue" customClass="RACustomStoryboardSegue" id="Zag-9j-nP5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="356" y="207"/>
         </scene>
-        <!--View Controller-->
+        <!--Welcome View Controller-->
         <scene sceneID="QSh-rA-uCk">
             <objects>
-                <viewController id="bq4-CC-Jfy" sceneMemberID="viewController">
+                <viewController id="bq4-CC-Jfy" customClass="RAWelcomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5QW-fZ-Lge"/>
                         <viewControllerLayoutGuide type="bottom" id="iKT-UI-aab"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kWT-ZU-0oC">
+                    <view key="view" contentMode="scaleToFill" id="kWT-ZU-0oC" customClass="RAWelcomeView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -132,6 +132,9 @@
                             <constraint firstItem="RIY-T8-urd" firstAttribute="centerY" secondItem="kWT-ZU-0oC" secondAttribute="centerY" id="zX3-4C-liZ"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mainView" destination="kWT-ZU-0oC" id="rYW-29-8jX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXg-3u-QiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

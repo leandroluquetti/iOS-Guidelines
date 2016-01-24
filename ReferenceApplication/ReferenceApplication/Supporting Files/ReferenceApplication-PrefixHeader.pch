@@ -14,5 +14,6 @@
 #endif
 
 #import "RALogging.h"
+#import "RAConstants.h"
 
 #endif /* ReferenceApplication_PrefixHeader_pch */

@@ -62,9 +62,18 @@
 		2AE386211C540C36001C8ED4 /* RATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386201C540C36001C8ED4 /* RATextField.m */; };
 		2AE386221C540C36001C8ED4 /* RATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386201C540C36001C8ED4 /* RATextField.m */; };
 		2AE386231C540C36001C8ED4 /* RATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386201C540C36001C8ED4 /* RATextField.m */; };
-		2AE386251C544E89001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386241C544E89001C8ED4 /* Localizable.strings */; };
-		2AE386261C544E89001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386241C544E89001C8ED4 /* Localizable.strings */; };
-		2AE386271C544E89001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386241C544E89001C8ED4 /* Localizable.strings */; };
+		2AE386351C54F12C001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386341C54F12C001C8ED4 /* Localizable.strings */; };
+		2AE386361C54F12C001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386341C54F12C001C8ED4 /* Localizable.strings */; };
+		2AE386371C54F12C001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386341C54F12C001C8ED4 /* Localizable.strings */; };
+		2AE3863D1C54F4A6001C8ED4 /* RAWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3863C1C54F4A6001C8ED4 /* RAWelcomeViewController.m */; };
+		2AE3863E1C54F4A6001C8ED4 /* RAWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3863C1C54F4A6001C8ED4 /* RAWelcomeViewController.m */; };
+		2AE3863F1C54F4A6001C8ED4 /* RAWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3863C1C54F4A6001C8ED4 /* RAWelcomeViewController.m */; };
+		2AE386431C54F577001C8ED4 /* RAWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386421C54F577001C8ED4 /* RAWelcomeView.m */; };
+		2AE386441C54F577001C8ED4 /* RAWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386421C54F577001C8ED4 /* RAWelcomeView.m */; };
+		2AE386451C54F577001C8ED4 /* RAWelcomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386421C54F577001C8ED4 /* RAWelcomeView.m */; };
+		2AE3865A1C54FE29001C8ED4 /* RACustomStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386591C54FE29001C8ED4 /* RACustomStoryboardSegue.m */; };
+		2AE3865B1C54FE29001C8ED4 /* RACustomStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386591C54FE29001C8ED4 /* RACustomStoryboardSegue.m */; };
+		2AE3865C1C54FE29001C8ED4 /* RACustomStoryboardSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386591C54FE29001C8ED4 /* RACustomStoryboardSegue.m */; };
 		55417D0C2B918A82E1ABFF5E /* libPods-ReferenceApplicationStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77169BC40764023DA44729B /* libPods-ReferenceApplicationStage.a */; };
 		683EF1BEA092253EE1AEC4B4 /* libPods-ReferenceApplicationProd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */; };
 		792D21A45B72FCB2A6FE9F09 /* libPods-ReferenceApplicationDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E564017E67BDA813C6221F27 /* libPods-ReferenceApplicationDev.a */; };
@@ -123,7 +132,14 @@
 		2AE3861B1C52A365001C8ED4 /* RALoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginManager.m; sourceTree = "<group>"; };
 		2AE3861F1C540C36001C8ED4 /* RATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATextField.h; sourceTree = "<group>"; };
 		2AE386201C540C36001C8ED4 /* RATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATextField.m; sourceTree = "<group>"; };
-		2AE386241C544E89001C8ED4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2AE386341C54F12C001C8ED4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		2AE386391C54F252001C8ED4 /* RAConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAConstants.h; sourceTree = "<group>"; };
+		2AE3863B1C54F4A6001C8ED4 /* RAWelcomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAWelcomeViewController.h; sourceTree = "<group>"; };
+		2AE3863C1C54F4A6001C8ED4 /* RAWelcomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAWelcomeViewController.m; sourceTree = "<group>"; };
+		2AE386411C54F577001C8ED4 /* RAWelcomeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAWelcomeView.h; sourceTree = "<group>"; };
+		2AE386421C54F577001C8ED4 /* RAWelcomeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAWelcomeView.m; sourceTree = "<group>"; };
+		2AE386581C54FE29001C8ED4 /* RACustomStoryboardSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACustomStoryboardSegue.h; sourceTree = "<group>"; };
+		2AE386591C54FE29001C8ED4 /* RACustomStoryboardSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACustomStoryboardSegue.m; sourceTree = "<group>"; };
 		3992C2978840F9BD202617CB /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceApplicationProd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99240C2AC47438915C1C1763 /* Pods-ReferenceApplicationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationDev/Pods-ReferenceApplicationDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -251,7 +267,9 @@
 			isa = PBXGroup;
 			children = (
 				2AE385D31C52908F001C8ED4 /* Base */,
+				2AE386571C54FE29001C8ED4 /* Flow Control */,
 				2AE385D91C52909D001C8ED4 /* Login */,
+				2AE3863A1C54F484001C8ED4 /* Welcome */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,7 +279,8 @@
 			children = (
 				2AB64C751C4FD60D00C878CE /* AppDelegate.h */,
 				2AB64C761C4FD60D00C878CE /* AppDelegate.m */,
-				2AE386241C544E89001C8ED4 /* Localizable.strings */,
+				2AE386381C54F1F6001C8ED4 /* Utils */,
+				2AE386331C54F12C001C8ED4 /* Localizable Strings */,
 				2AB64CB51C51897C00C878CE /* Logging */,
 			);
 			path = Infrastructure;
@@ -307,6 +326,7 @@
 				2AE385F71C52947A001C8ED4 /* UI Components */,
 				2AE385EB1C5291CE001C8ED4 /* Base */,
 				2AE385F11C5291D5001C8ED4 /* Login */,
+				2AE386401C54F545001C8ED4 /* Welcome */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -485,6 +505,49 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		2AE386331C54F12C001C8ED4 /* Localizable Strings */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386341C54F12C001C8ED4 /* Localizable.strings */,
+			);
+			path = "Localizable Strings";
+			sourceTree = "<group>";
+		};
+		2AE386381C54F1F6001C8ED4 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386391C54F252001C8ED4 /* RAConstants.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2AE3863A1C54F484001C8ED4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				2AE3863B1C54F4A6001C8ED4 /* RAWelcomeViewController.h */,
+				2AE3863C1C54F4A6001C8ED4 /* RAWelcomeViewController.m */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		2AE386401C54F545001C8ED4 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386411C54F577001C8ED4 /* RAWelcomeView.h */,
+				2AE386421C54F577001C8ED4 /* RAWelcomeView.m */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		2AE386571C54FE29001C8ED4 /* Flow Control */ = {
+			isa = PBXGroup;
+			children = (
+				2AE386581C54FE29001C8ED4 /* RACustomStoryboardSegue.h */,
+				2AE386591C54FE29001C8ED4 /* RACustomStoryboardSegue.m */,
+			);
+			path = "Flow Control";
+			sourceTree = "<group>";
+		};
 		726C57A204041B0FD503B8CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -634,7 +697,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE386271C544E89001C8ED4 /* Localizable.strings in Resources */,
+				2AE386371C54F12C001C8ED4 /* Localizable.strings in Resources */,
 				2AB64C321C4FC45400C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C2D1C4FC45400C878CE /* Main.storyboard in Resources */,
 				2AE386161C52A1AA001C8ED4 /* LICENSE in Resources */,
@@ -653,7 +716,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE386251C544E89001C8ED4 /* Localizable.strings in Resources */,
+				2AE386351C54F12C001C8ED4 /* Localizable.strings in Resources */,
 				2AB64C551C4FD3C600C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C571C4FD3C600C878CE /* Main.storyboard in Resources */,
 				2AE386141C52A1AA001C8ED4 /* LICENSE in Resources */,
@@ -665,7 +728,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2AE386261C544E89001C8ED4 /* Localizable.strings in Resources */,
+				2AE386361C54F12C001C8ED4 /* Localizable.strings in Resources */,
 				2AB64C631C4FD3CA00C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C651C4FD3CA00C878CE /* Main.storyboard in Resources */,
 				2AE386151C52A1AA001C8ED4 /* LICENSE in Resources */,
@@ -820,9 +883,12 @@
 			files = (
 				2AE385D81C52908F001C8ED4 /* RABaseViewController.m in Sources */,
 				2AE3861E1C52A365001C8ED4 /* RALoginManager.m in Sources */,
+				2AE3863F1C54F4A6001C8ED4 /* RAWelcomeViewController.m in Sources */,
 				2AE386231C540C36001C8ED4 /* RATextField.m in Sources */,
 				2AE385E41C529109001C8ED4 /* RABaseManager.m in Sources */,
 				2AE3860C1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
+				2AE386451C54F577001C8ED4 /* RAWelcomeView.m in Sources */,
+				2AE3865C1C54FE29001C8ED4 /* RACustomStoryboardSegue.m in Sources */,
 				2AB64C8B1C4FDA2300C878CE /* main.m in Sources */,
 				2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C771C4FD60D00C878CE /* AppDelegate.m in Sources */,
@@ -849,9 +915,12 @@
 			files = (
 				2AE385D61C52908F001C8ED4 /* RABaseViewController.m in Sources */,
 				2AE3861C1C52A365001C8ED4 /* RALoginManager.m in Sources */,
+				2AE3863D1C54F4A6001C8ED4 /* RAWelcomeViewController.m in Sources */,
 				2AE386211C540C36001C8ED4 /* RATextField.m in Sources */,
 				2AE385E21C529109001C8ED4 /* RABaseManager.m in Sources */,
 				2AE3860A1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
+				2AE386431C54F577001C8ED4 /* RAWelcomeView.m in Sources */,
+				2AE3865A1C54FE29001C8ED4 /* RACustomStoryboardSegue.m in Sources */,
 				2AB64C911C50411F00C878CE /* main.m in Sources */,
 				2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C8F1C50411700C878CE /* AppDelegate.m in Sources */,
@@ -870,9 +939,12 @@
 			files = (
 				2AE385D71C52908F001C8ED4 /* RABaseViewController.m in Sources */,
 				2AE3861D1C52A365001C8ED4 /* RALoginManager.m in Sources */,
+				2AE3863E1C54F4A6001C8ED4 /* RAWelcomeViewController.m in Sources */,
 				2AE386221C540C36001C8ED4 /* RATextField.m in Sources */,
 				2AE385E31C529109001C8ED4 /* RABaseManager.m in Sources */,
 				2AE3860B1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
+				2AE386441C54F577001C8ED4 /* RAWelcomeView.m in Sources */,
+				2AE3865B1C54FE29001C8ED4 /* RACustomStoryboardSegue.m in Sources */,
 				2AB64C901C50411F00C878CE /* main.m in Sources */,
 				2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C8E1C50411600C878CE /* AppDelegate.m in Sources */,
