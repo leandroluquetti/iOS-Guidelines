@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  ReferenceApplication
+
+  Created by SalmoJunior on 1/23/16.
+  Copyright © 2016 CI&T. All rights reserved.
+*/
+
+/* Login Screen */
+"loginScreen.placeholder.user" = "Username";
+"loginScreen.placeholder.password" = "Password";
+"loginScreen.button.login" = "Login";

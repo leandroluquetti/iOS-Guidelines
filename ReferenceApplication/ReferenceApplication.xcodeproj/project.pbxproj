@@ -62,6 +62,9 @@
 		2AE386211C540C36001C8ED4 /* RATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386201C540C36001C8ED4 /* RATextField.m */; };
 		2AE386221C540C36001C8ED4 /* RATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386201C540C36001C8ED4 /* RATextField.m */; };
 		2AE386231C540C36001C8ED4 /* RATextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386201C540C36001C8ED4 /* RATextField.m */; };
+		2AE386251C544E89001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386241C544E89001C8ED4 /* Localizable.strings */; };
+		2AE386261C544E89001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386241C544E89001C8ED4 /* Localizable.strings */; };
+		2AE386271C544E89001C8ED4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386241C544E89001C8ED4 /* Localizable.strings */; };
 		55417D0C2B918A82E1ABFF5E /* libPods-ReferenceApplicationStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B77169BC40764023DA44729B /* libPods-ReferenceApplicationStage.a */; };
 		683EF1BEA092253EE1AEC4B4 /* libPods-ReferenceApplicationProd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */; };
 		792D21A45B72FCB2A6FE9F09 /* libPods-ReferenceApplicationDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E564017E67BDA813C6221F27 /* libPods-ReferenceApplicationDev.a */; };
@@ -120,6 +123,7 @@
 		2AE3861B1C52A365001C8ED4 /* RALoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginManager.m; sourceTree = "<group>"; };
 		2AE3861F1C540C36001C8ED4 /* RATextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RATextField.h; sourceTree = "<group>"; };
 		2AE386201C540C36001C8ED4 /* RATextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RATextField.m; sourceTree = "<group>"; };
+		2AE386241C544E89001C8ED4 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		3992C2978840F9BD202617CB /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		521831D32342066DAA4FBA92 /* libPods-ReferenceApplicationProd.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ReferenceApplicationProd.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		99240C2AC47438915C1C1763 /* Pods-ReferenceApplicationDev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationDev.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationDev/Pods-ReferenceApplicationDev.release.xcconfig"; sourceTree = "<group>"; };
@@ -257,6 +261,7 @@
 			children = (
 				2AB64C751C4FD60D00C878CE /* AppDelegate.h */,
 				2AB64C761C4FD60D00C878CE /* AppDelegate.m */,
+				2AE386241C544E89001C8ED4 /* Localizable.strings */,
 				2AB64CB51C51897C00C878CE /* Logging */,
 			);
 			path = Infrastructure;
@@ -629,6 +634,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE386271C544E89001C8ED4 /* Localizable.strings in Resources */,
 				2AB64C321C4FC45400C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C2D1C4FC45400C878CE /* Main.storyboard in Resources */,
 				2AE386161C52A1AA001C8ED4 /* LICENSE in Resources */,
@@ -647,6 +653,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE386251C544E89001C8ED4 /* Localizable.strings in Resources */,
 				2AB64C551C4FD3C600C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C571C4FD3C600C878CE /* Main.storyboard in Resources */,
 				2AE386141C52A1AA001C8ED4 /* LICENSE in Resources */,
@@ -658,6 +665,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AE386261C544E89001C8ED4 /* Localizable.strings in Resources */,
 				2AB64C631C4FD3CA00C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C651C4FD3CA00C878CE /* Main.storyboard in Resources */,
 				2AE386151C52A1AA001C8ED4 /* LICENSE in Resources */,

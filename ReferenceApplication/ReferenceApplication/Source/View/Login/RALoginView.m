@@ -20,6 +20,18 @@
 
 @implementation RALoginView
 
+#pragma mark - Override
+
+-(void)awakeFromNib {
+    [super awakeFromNib];
+    
+    self.userTextField.placeholder = NSLocalizedString(@"loginScreen.placeholder.user", @"Username placeholder");
+    self.passwordTextField.placeholder = NSLocalizedString(@"loginScreen.placeholder.password", @"Password placeholder");
+    [self.loginButton setTitle:NSLocalizedString(@"loginScreen.button.login", @"Login button title") forState:UIControlStateNormal];
+}
+
+#pragma mark - Getters/Setters
+
 - (NSString *)userText {
     NSString *user = [self.userTextField textWithoutSpace];
 
@@ -31,6 +43,8 @@
 
     return password;
 }
+
+#pragma mark - Actions
 
 - (void)dismissKeyboard {
     [self.userTextField resignFirstResponder];
