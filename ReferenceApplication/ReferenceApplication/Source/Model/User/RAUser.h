@@ -10,4 +10,7 @@
 
 @interface RAUser : NSObject
 
+@property (copy, nonatomic) NSString *name;
+@property (copy, nonatomic) NSString *email;
+
 @end
