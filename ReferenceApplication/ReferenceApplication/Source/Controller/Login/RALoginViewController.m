@@ -14,6 +14,7 @@
 
 @property (strong, nonatomic) IBOutlet RALoginView *mainView;
 @property (strong, nonatomic) RALoginManager *manager;
+@property (strong, nonatomic) RAUser *loggedUser;
 
 @end
 
@@ -40,6 +41,10 @@
     }
     
     return _manager;
+}
+
+- (RAUser *)currentUser {
+    return self.loggedUser;
 }
 
 #pragma mark - Actions
@@ -92,6 +97,7 @@
     [self.mainView showLoadingView:NO];
     
     if (status) {
+        self.loggedUser = user;
         [self performSegueWithIdentifier:kFromLoginViewToWelcomeViewSegue sender:nil];
     } else {
         [self.mainView invalidField:RALoginFieldAll];

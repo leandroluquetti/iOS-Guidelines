@@ -10,4 +10,6 @@
 
 @interface RAWelcomeView : RABaseView
 
+- (void)showWelcomeMessageWithName:(NSString *)name;
+
 @end

@@ -21,6 +21,9 @@
 
 -(void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSString *name = self.user.name;
+    [self.mainView showWelcomeMessageWithName:name];
 }
 
 

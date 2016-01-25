@@ -10,3 +10,7 @@
 "loginScreen.placeholder.user" = "Username";
 "loginScreen.placeholder.password" = "Password";
 "loginScreen.button.login" = "Login";
+
+/*Welcome Screen*/
+"welcomeScreen.label.successful" = "Successful Login!!!";
+"welcomeScreen.label.welcome" = "Welcome, %@!";

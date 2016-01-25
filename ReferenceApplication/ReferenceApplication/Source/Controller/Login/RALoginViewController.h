@@ -7,7 +7,10 @@
 //
 
 #import "RABaseViewController.h"
+#import "RAUser.h"
 
 @interface RALoginViewController : RABaseViewController
+
+- (RAUser *)currentUser;
 
 @end

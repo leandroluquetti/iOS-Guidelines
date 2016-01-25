@@ -21,8 +21,10 @@
 }
 
 - (void)perfomrSegueFromLoginViewToWelcomeView {
+    RALoginViewController *loginViewController = (RALoginViewController *)self.sourceViewController;
     RAWelcomeViewController *welcomeViewController = (RAWelcomeViewController *)self.destinationViewController;
     
+    welcomeViewController.user = [loginViewController currentUser];
     [self.sourceViewController presentViewController:welcomeViewController animated:YES completion:nil];
 }
 

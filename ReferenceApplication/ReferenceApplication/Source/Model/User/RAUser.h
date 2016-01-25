@@ -10,6 +10,8 @@
 
 @interface RAUser : NSObject
 
+- (instancetype)initWithLoginResponse:(id)serviceResponse;
+
 @property (copy, nonatomic) NSString *name;
 @property (copy, nonatomic) NSString *email;
 

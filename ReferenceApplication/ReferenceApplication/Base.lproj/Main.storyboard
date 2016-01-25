@@ -120,17 +120,34 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Successful Login!!!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RIY-T8-urd">
-                                <rect key="frame" x="179" y="283" width="243" height="35"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <rect key="frame" x="208" y="126" width="186" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome, User!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ey9-nC-ecs">
+                                <rect key="frame" x="158" y="259" width="285" height="96"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="4IN-mH-hjN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <color key="textColor" red="0.95686274510000002" green="0.95686274510000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.72549019609999998" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="RIY-T8-urd" firstAttribute="centerX" secondItem="kWT-ZU-0oC" secondAttribute="centerX" id="LHa-53-p12"/>
-                            <constraint firstItem="RIY-T8-urd" firstAttribute="centerY" secondItem="kWT-ZU-0oC" secondAttribute="centerY" id="zX3-4C-liZ"/>
+                            <constraint firstItem="Ey9-nC-ecs" firstAttribute="leading" relation="lessThanOrEqual" secondItem="kWT-ZU-0oC" secondAttribute="leadingMargin" constant="138" id="8ag-9k-CZt"/>
+                            <constraint firstAttribute="trailingMargin" relation="lessThanOrEqual" secondItem="Ey9-nC-ecs" secondAttribute="trailing" constant="137" id="BYy-vo-hsi"/>
+                            <constraint firstItem="Ey9-nC-ecs" firstAttribute="top" secondItem="RIY-T8-urd" secondAttribute="bottom" constant="106" id="JOo-mB-Uml"/>
+                            <constraint firstItem="Ey9-nC-ecs" firstAttribute="centerX" secondItem="RIY-T8-urd" secondAttribute="centerX" id="KMt-TB-s3x"/>
+                            <constraint firstItem="RIY-T8-urd" firstAttribute="centerX" secondItem="kWT-ZU-0oC" secondAttribute="centerX" constant="1" id="LHa-53-p12"/>
+                            <constraint firstItem="RIY-T8-urd" firstAttribute="centerY" secondItem="kWT-ZU-0oC" secondAttribute="centerY" constant="-160" id="zX3-4C-liZ"/>
                         </constraints>
+                        <connections>
+                            <outlet property="loginSuccessLabel" destination="RIY-T8-urd" id="wdn-Px-vZS"/>
+                            <outlet property="welcomeLabel" destination="Ey9-nC-ecs" id="axl-GP-l7a"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="mainView" destination="kWT-ZU-0oC" id="rYW-29-8jX"/>

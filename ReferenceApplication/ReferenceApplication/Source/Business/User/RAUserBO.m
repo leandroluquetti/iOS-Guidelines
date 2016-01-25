@@ -24,7 +24,7 @@
                              password:password
                               success:^(NSURLSessionDataTask *task, id responseObject)
      {
-         RAUser *user = [self userFromLoginResponse:responseObject];
+         RAUser *user = [[RAUser alloc] initWithLoginResponse:responseObject];
          success(user);
          
      } failure:^(NSError *error) {
@@ -33,22 +33,6 @@
          
          failure(error);
      }];
-}
-
-
-#pragma mark - Parses
-
-+ (RAUser *)userFromLoginResponse:(id)serviceResponse {
-    RAUser *user;
-    NSDictionary *responseObject = serviceResponse;
-    
-    if ([responseObject isKindOfClass:[NSDictionary class]]) {
-        user = [RAUser new];
-        user.name = responseObject[@"name"];
-        user.email = responseObject[@"email"];
-    }
-    
-    return user;
 }
 
 @end
