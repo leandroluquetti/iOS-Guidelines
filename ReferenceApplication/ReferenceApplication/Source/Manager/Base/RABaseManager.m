@@ -8,6 +8,7 @@
 
 #import "RABaseManager.h"
 
+
 @implementation RABaseManager
 
 - (NSOperationQueue *)mainQueue {

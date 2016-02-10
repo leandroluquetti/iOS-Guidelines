@@ -8,13 +8,13 @@
 
 #import "RAHTTPSessionProvider+User.h"
 
+
 @implementation RAHTTPSessionProvider (User)
 
 - (void)loginWithUsername:(NSString *)username
                  password:(NSString *)password
                   success:(RARequestOperationBlockSuccess)success
-                  failure:(RARequestOperationBlockFailure)failure
-{
+                  failure:(RARequestOperationBlockFailure)failure {
     NSString *loginProfileUser = [self loginEndpoint];
     
     NSDictionary *parameters = @{@"username": username,
@@ -35,8 +35,7 @@
 
 #pragma mark - EndPoints
 
-- (NSString *)loginEndpoint
-{
+- (NSString *)loginEndpoint {
     NSString *endpoint = [self setEndpointVersion:@"login"];
     
     return endpoint;

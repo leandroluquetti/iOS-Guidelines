@@ -18,13 +18,16 @@
 
 @end
 
+
 @implementation RALoginViewController
+
 
 #pragma mark - Override
 
 - (void)viewDidLoad {
     [super viewDidLoad];
 }
+
 
 #pragma mark - Getters/Setters
 
@@ -35,8 +38,7 @@
 }
 
 - (RALoginManager *)manager {
-    if (!_manager)
-    {
+    if (!_manager) {
         _manager = [RALoginManager new];
     }
     
@@ -46,6 +48,7 @@
 - (RAUser *)currentUser {
     return self.loggedUser;
 }
+
 
 #pragma mark - Actions
 
@@ -57,6 +60,7 @@
 - (IBAction)backgroundTapped:(id)sender {
     [self.mainView dismissKeyboard];
 }
+
 
 #pragma mark - Authentication
 

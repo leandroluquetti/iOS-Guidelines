@@ -9,6 +9,7 @@
 #import "RALoginManager.h"
 #import "RAUserBO.h"
 
+
 @implementation RALoginManager
 
 - (void)loginWithUsername:(NSString *)user

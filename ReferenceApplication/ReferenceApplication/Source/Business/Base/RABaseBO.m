@@ -8,6 +8,7 @@
 
 #import "RABaseBO.h"
 
+
 @implementation RABaseBO
 
 @end

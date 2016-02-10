@@ -10,6 +10,6 @@
 #define RAConstants_h
 
 /* Segue Identifiers */
-static NSString *const kFromLoginViewToWelcomeViewSegue = @"fromLoginViewToWelcomeViewSegue";
+static NSString * const kFromLoginViewToWelcomeViewSegue = @"fromLoginViewToWelcomeViewSegue";
 
 #endif /* RAConstants_h */

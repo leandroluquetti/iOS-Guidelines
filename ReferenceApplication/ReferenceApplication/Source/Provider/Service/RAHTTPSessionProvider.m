@@ -11,13 +11,15 @@
 static NSString * const kBaseURL = @"https://api.parse.com";
 static NSString * const kEndPointVersion = @"1";
 
+
 @implementation RAHTTPSessionProvider
+
 
 #pragma mark - Singleton
 
 + (instancetype)sharedInstance {
     
-    static RAHTTPSessionProvider *_sharedInstance = nil;
+    static RAHTTPSessionProvider * _sharedInstance = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -33,6 +35,7 @@ static NSString * const kEndPointVersion = @"1";
 
 - (instancetype)initWithBaseURL:(NSURL *)url {
     self = [super initWithBaseURL:url];
+    
     if (self) {
         self.requestSerializer = [AFJSONRequestSerializer serializer];
         [self.requestSerializer setValue:@"oUZjvMyLohNCAlAmoi8rWQdUq1MXyDNxHvjTwVUM"
@@ -45,6 +48,7 @@ static NSString * const kEndPointVersion = @"1";
     
     return self;
 }
+
 
 #pragma mark - 
 

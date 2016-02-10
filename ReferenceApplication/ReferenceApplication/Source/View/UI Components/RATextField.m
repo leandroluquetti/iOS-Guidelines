@@ -9,6 +9,7 @@
 #import "RATextField.h"
 #import "UIView+Shake.h"
 
+
 @implementation RATextField
 
 - (void)invalidate {

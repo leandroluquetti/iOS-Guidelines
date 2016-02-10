@@ -9,7 +9,9 @@
 #import "RAUserBO.h"
 #import "RAHTTPSessionProvider+User.h"
 
+
 @implementation RAUserBO
+
 
 #pragma mark - Services
 

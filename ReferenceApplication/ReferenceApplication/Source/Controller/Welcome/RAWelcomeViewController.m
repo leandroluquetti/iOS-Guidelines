@@ -15,11 +15,13 @@
 
 @end
 
+
 @implementation RAWelcomeViewController
+
 
 #pragma mark - Override
 
--(void)viewDidLoad {
+- (void)viewDidLoad {
     [super viewDidLoad];
     
     NSString *name = self.user.name;

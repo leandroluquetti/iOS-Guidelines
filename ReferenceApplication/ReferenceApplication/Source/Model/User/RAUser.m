@@ -8,6 +8,7 @@
 
 #import "RAUser.h"
 
+
 @implementation RAUser
 
 #pragma mark - Inits
@@ -19,6 +20,7 @@
     
     return self;
 }
+
 
 #pragma mark - Parses
 
