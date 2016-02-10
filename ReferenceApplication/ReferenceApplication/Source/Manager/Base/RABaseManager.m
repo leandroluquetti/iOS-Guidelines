@@ -2,7 +2,7 @@
 //  RABaseManager.m
 //  ReferenceApplication
 //
-//  Created by SalmoJunior on 1/21/16.
+//  Created by SwatTeam on 1/21/16.
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
@@ -11,6 +11,9 @@
 
 @implementation RABaseManager
 
+/**
+ *  This Operation queue should be used whenever one view controller needs Pause Stop Resume or Cancel operations
+ */
 - (NSOperationQueue *)mainQueue {
     if (!_mainQueue) {
         _mainQueue = [NSOperationQueue new];
