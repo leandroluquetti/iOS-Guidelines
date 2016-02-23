@@ -14,3 +14,4 @@
 /*Welcome Screen*/
 "welcomeScreen.label.successful" = "Successful Login!!!";
 "welcomeScreen.label.welcome" = "Welcome, %@!";
+"welcomeScreen.item.database" = "Database example";

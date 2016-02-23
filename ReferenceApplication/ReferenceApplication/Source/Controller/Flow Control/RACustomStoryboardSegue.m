@@ -25,7 +25,9 @@
 
 - (void)perform {
     if ([self.identifier isEqualToString:kFromLoginViewToWelcomeViewSegue]) {
-        [self perfomrSegueFromLoginViewToWelcomeView];
+        [self performSegueFromLoginViewToWelcomeView];
+    } else if ([self.identifier isEqualToString:kFromWelcomeViewToDatabaseViewSegue]) {
+        [self performSegueFromWelcomeViewToDatabaseView];
     }
 }
 
@@ -33,12 +35,24 @@
  *  Transition between Login and Welcome view. 
  *  All data requied for this transition should be keep inside this method
  */
-- (void)perfomrSegueFromLoginViewToWelcomeView {
+- (void)performSegueFromLoginViewToWelcomeView {
     RALoginViewController *loginViewController = (RALoginViewController *)self.sourceViewController;
-    RAWelcomeViewController *welcomeViewController = (RAWelcomeViewController *)self.destinationViewController;
+    UINavigationController *navigationController = (UINavigationController *)self.destinationViewController;
+    RAWelcomeViewController *welcomeViewController = (RAWelcomeViewController *)navigationController.viewControllers[0];
+    
     
     welcomeViewController.user = [loginViewController currentUser];
-    [self.sourceViewController presentViewController:welcomeViewController animated:YES completion:nil];
+    [self.sourceViewController presentViewController:navigationController animated:YES completion:nil];
+}
+
+/**
+ *  Transition between Welcome and Database view.
+ *  All data requied for this transition should be keep inside this method
+ */
+- (void)performSegueFromWelcomeViewToDatabaseView {
+    UIViewController *databaseViewController = (UIViewController *)self.destinationViewController;
+    
+    [self.sourceViewController.navigationController pushViewController:databaseViewController animated:YES];
 }
 
 @end

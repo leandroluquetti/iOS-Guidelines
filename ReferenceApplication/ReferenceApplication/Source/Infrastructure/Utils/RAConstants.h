@@ -11,5 +11,7 @@
 
 /* Segue Identifiers */
 static NSString * const kFromLoginViewToWelcomeViewSegue = @"fromLoginViewToWelcomeViewSegue";
+static NSString * const kFromWelcomeViewToDatabaseViewSegue = @"fromWelcomeViewToDatabaseViewSegue";
+static NSString * const kClientTableViewControllerContainerSegue = @"clientTableViewControllerContainerSegue";
 
 #endif /* RAConstants_h */

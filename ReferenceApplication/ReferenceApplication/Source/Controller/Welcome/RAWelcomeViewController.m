@@ -9,15 +9,17 @@
 #import "RAWelcomeViewController.h"
 #import "RAWelcomeView.h"
 
-@interface RAWelcomeViewController()
+@interface RAWelcomeViewController() <UITableViewDataSource, UITableViewDelegate>
 
 @property (strong, nonatomic) IBOutlet RAWelcomeView *mainView;
+@property (strong, nonatomic) NSArray *dataSource;
 
 @end
 
 
 @implementation RAWelcomeViewController
 
+static NSString * const kWelcomeTableViewReusableIdentifier = @"welcomeTableViewReusableIdentifier";
 
 #pragma mark - Override
 
@@ -26,6 +28,8 @@
     
     NSString *name = self.user.name;
     [self.mainView showWelcomeMessageWithName:name];
+    
+    self.dataSource = @[NSLocalizedString(@"welcomeScreen.item.database", @"Database example")];
 }
 
 
@@ -35,6 +39,39 @@
     RAWelcomeView *__weak view = (RAWelcomeView *)self.view;
     
     return view;
+}
+
+
+#pragma mark - UITableViewDataSource/Delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return self.dataSource.count;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kWelcomeTableViewReusableIdentifier];
+    
+    if (!cell) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:kWelcomeTableViewReusableIdentifier];
+    }
+    
+    cell.textLabel.text = self.dataSource[indexPath.row];
+    
+    return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    switch (indexPath.row) {
+        case 0:
+            [self performSegueWithIdentifier:kFromWelcomeViewToDatabaseViewSegue sender:self];
+            break;
+        default:
+            break;
+    }
 }
 
 @end
