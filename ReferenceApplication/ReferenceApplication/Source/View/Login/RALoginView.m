@@ -11,8 +11,8 @@
 
 @interface RALoginView ()
 
-@property (weak, nonatomic) IBOutlet RATextField *userTextField;
-@property (weak, nonatomic) IBOutlet RATextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet CITTextField *userTextField;
+@property (weak, nonatomic) IBOutlet CITTextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *loginButton;
 @property (weak, nonatomic) IBOutlet UIView *loadingView;
 
