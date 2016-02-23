@@ -99,7 +99,6 @@
                         </connections>
                     </view>
                     <connections>
-                        <outlet property="mainView" destination="8bC-Xf-vdC" id="dgZ-Tf-9Np"/>
                         <segue destination="V0u-ax-tpg" kind="custom" identifier="fromLoginViewToWelcomeViewSegue" customClass="CITCustomStoryboardSegue" id="tez-Ld-ZEt"/>
                     </connections>
                 </viewController>
@@ -200,7 +199,6 @@
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="md7-3l-wFf"/>
                     <connections>
-                        <outlet property="mainView" destination="kWT-ZU-0oC" id="rYW-29-8jX"/>
                         <segue destination="hzj-Is-zDd" kind="custom" identifier="fromWelcomeViewToDatabaseViewSegue" customClass="CITCustomStoryboardSegue" id="luQ-Kf-KVn"/>
                     </connections>
                 </viewController>
