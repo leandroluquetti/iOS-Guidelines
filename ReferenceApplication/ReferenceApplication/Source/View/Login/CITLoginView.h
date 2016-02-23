@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, RALoginFieldType) {
     RALoginFieldAll
 };
 
-@interface RALoginView : CITBaseView
+@interface CITLoginView : CITBaseView
 
 - (NSString *)userText;
 - (NSString *)passwordText;

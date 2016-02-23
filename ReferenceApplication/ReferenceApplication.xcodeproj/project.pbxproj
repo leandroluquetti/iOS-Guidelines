@@ -38,9 +38,9 @@
 		2AE385EE1C5291CE001C8ED4 /* CITBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */; };
 		2AE385EF1C5291CE001C8ED4 /* CITBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */; };
 		2AE385F01C5291CE001C8ED4 /* CITBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */; };
-		2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
-		2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
-		2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
+		2AE385F41C5291FD001C8ED4 /* CITLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* CITLoginView.m */; };
+		2AE385F51C5291FD001C8ED4 /* CITLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* CITLoginView.m */; };
+		2AE385F61C5291FD001C8ED4 /* CITLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* CITLoginView.m */; };
 		2AE385FC1C52A10F001C8ED4 /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */; };
 		2AE385FD1C52A10F001C8ED4 /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */; };
 		2AE385FE1C52A10F001C8ED4 /* RABaseBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */; };
@@ -177,8 +177,8 @@
 		2AE385E11C529109001C8ED4 /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
 		2AE385EC1C5291CE001C8ED4 /* CITBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITBaseView.h; sourceTree = "<group>"; };
 		2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITBaseView.m; sourceTree = "<group>"; };
-		2AE385F21C5291FD001C8ED4 /* RALoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginView.h; sourceTree = "<group>"; };
-		2AE385F31C5291FD001C8ED4 /* RALoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginView.m; sourceTree = "<group>"; };
+		2AE385F21C5291FD001C8ED4 /* CITLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITLoginView.h; sourceTree = "<group>"; };
+		2AE385F31C5291FD001C8ED4 /* CITLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITLoginView.m; sourceTree = "<group>"; };
 		2AE385FA1C52A10F001C8ED4 /* RABaseBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseBO.h; sourceTree = "<group>"; };
 		2AE385FB1C52A10F001C8ED4 /* RABaseBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseBO.m; sourceTree = "<group>"; };
 		2AE385FF1C52A12D001C8ED4 /* RAUserBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAUserBO.h; sourceTree = "<group>"; };
@@ -524,8 +524,8 @@
 		2AE385F11C5291D5001C8ED4 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				2AE385F21C5291FD001C8ED4 /* RALoginView.h */,
-				2AE385F31C5291FD001C8ED4 /* RALoginView.m */,
+				2AE385F21C5291FD001C8ED4 /* CITLoginView.h */,
+				2AE385F31C5291FD001C8ED4 /* CITLoginView.m */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -1181,7 +1181,7 @@
 				2AB64C8B1C4FDA2300C878CE /* main.m in Sources */,
 				2B6D6EFE1C7CCA35002DAA16 /* CITDataAccess.m in Sources */,
 				2B6D6EBE1C7CC386002DAA16 /* NSArray+Additions.m in Sources */,
-				2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */,
+				2AE385F61C5291FD001C8ED4 /* CITLoginView.m in Sources */,
 				2AB64C771C4FD60D00C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED31C7CC386002DAA16 /* UIView+Animations.m in Sources */,
 				2AE385F01C5291CE001C8ED4 /* CITBaseView.m in Sources */,
@@ -1231,7 +1231,7 @@
 				2AB64C911C50411F00C878CE /* main.m in Sources */,
 				2B6D6EFC1C7CCA35002DAA16 /* CITDataAccess.m in Sources */,
 				2B6D6EBC1C7CC386002DAA16 /* NSArray+Additions.m in Sources */,
-				2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */,
+				2AE385F41C5291FD001C8ED4 /* CITLoginView.m in Sources */,
 				2AB64C8F1C50411700C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED11C7CC386002DAA16 /* UIView+Animations.m in Sources */,
 				2AE385EE1C5291CE001C8ED4 /* CITBaseView.m in Sources */,
@@ -1273,7 +1273,7 @@
 				2AB64C901C50411F00C878CE /* main.m in Sources */,
 				2B6D6EFD1C7CCA35002DAA16 /* CITDataAccess.m in Sources */,
 				2B6D6EBD1C7CC386002DAA16 /* NSArray+Additions.m in Sources */,
-				2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */,
+				2AE385F51C5291FD001C8ED4 /* CITLoginView.m in Sources */,
 				2AB64C8E1C50411600C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED21C7CC386002DAA16 /* UIView+Animations.m in Sources */,
 				2AE385EF1C5291CE001C8ED4 /* CITBaseView.m in Sources */,

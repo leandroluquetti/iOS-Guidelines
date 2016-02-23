@@ -7,12 +7,12 @@
 //
 
 #import "RALoginViewController.h"
-#import "RALoginView.h"
+#import "CITLoginView.h"
 #import "RALoginManager.h"
 
 @interface RALoginViewController ()
 
-@property (strong, nonatomic) IBOutlet RALoginView *mainView;
+@property (strong, nonatomic) IBOutlet CITLoginView *mainView;
 @property (strong, nonatomic) RALoginManager *manager;
 @property (strong, nonatomic) RAUser *loggedUser;
 
@@ -31,8 +31,8 @@
 
 #pragma mark - Getters/Setters
 
-- (RALoginView *)mainView {
-    RALoginView *__weak view = (RALoginView *)self.view;
+- (CITLoginView *)mainView {
+    CITLoginView *__weak view = (CITLoginView *)self.view;
     
     return view;
 }

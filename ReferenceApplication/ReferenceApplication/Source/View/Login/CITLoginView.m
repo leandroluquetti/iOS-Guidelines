@@ -6,10 +6,10 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RALoginView.h"
+#import "CITLoginView.h"
 #import "CITTextField.h"
 
-@interface RALoginView ()
+@interface CITLoginView ()
 
 @property (weak, nonatomic) IBOutlet CITTextField *userTextField;
 @property (weak, nonatomic) IBOutlet CITTextField *passwordTextField;
@@ -19,7 +19,7 @@
 @end
 
 
-@implementation RALoginView
+@implementation CITLoginView
 
 #pragma mark - Override
 
