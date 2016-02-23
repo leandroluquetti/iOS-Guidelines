@@ -26,11 +26,13 @@
                              password:password
                               success:^(NSURLSessionDataTask *task, id responseObject)
      {
+         ALog(@"Login .with success");
          CITUser *user = [[CITUser alloc] initWithLoginResponse:responseObject];
          success(user);
          
      } failure:^(NSError *error) {
          
+         ALog(@"Error on login.");
          //error handling
          
          failure(error);

@@ -2,7 +2,7 @@
 //  CITDatabaseExampleManager.m
 //  ReferenceApplication
 //
-//  Created by Gian Nucci on 2/23/16.
+//  Created by SwatTeam on 2/23/16.
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
@@ -16,7 +16,6 @@
  withCompletionBlock:(void(^)(BOOL success))completion {
 
     [self.mainQueue addOperationWithBlock:^{
-        
         [CITClientBO insertClient:client andCompletionBlock:completion];
     }];
 }

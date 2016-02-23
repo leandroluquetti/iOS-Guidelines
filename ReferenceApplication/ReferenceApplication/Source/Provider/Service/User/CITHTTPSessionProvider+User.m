@@ -7,7 +7,7 @@
 //
 
 #import "CITHTTPSessionProvider+User.h"
-
+#import "CITLogging.h"
 
 @implementation CITHTTPSessionProvider (User)
 
@@ -28,6 +28,7 @@
           AFHTTPRequestSerializer *serializer = self.requestSerializer;
           [serializer clearAuthorizationHeader];
           
+          DLog(@"Request error: %@", error.description);
           failure(error);
       }];
 }

@@ -8,6 +8,7 @@
 
 #import "CITDataAccess+Client.h"
 #import "CITClient.h"
+#import "CITLogging.h"
 
 @implementation CITDataAccess (Client)
 
@@ -27,6 +28,7 @@ static NSString * const kSelectAllClient = @"SELECT * FROM client;";
             *rollback = !success;
         }
         
+        ALog(@"Client added with success.");
         completion(success);
     }];
 }
