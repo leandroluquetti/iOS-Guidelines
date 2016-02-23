@@ -7,7 +7,7 @@
 //
 
 #import "RALoginView.h"
-#import "RATextField.h"
+#import "CITTextField.h"
 
 @interface RALoginView ()
 

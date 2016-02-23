@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RATextField : UITextField
+@interface CITTextField : UITextField
 
 - (void)invalidate;
 - (void)shake;
