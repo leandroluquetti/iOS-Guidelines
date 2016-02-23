@@ -1,5 +1,5 @@
 //
-//  RAUser.h
+//  CITUser.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.

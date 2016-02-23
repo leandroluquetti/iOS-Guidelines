@@ -2,7 +2,7 @@
 //  CITDatabaseProvider.h
 //  ReferenceApplication
 //
-//  Created by SwatTeam on 25/09/12.
+//  Created by SwatTeam on 25/01/16.
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 

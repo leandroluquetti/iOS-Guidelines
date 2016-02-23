@@ -1,5 +1,5 @@
 //
-//  RAUser.m
+//  CITUser.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.

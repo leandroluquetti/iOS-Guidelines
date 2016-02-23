@@ -1,5 +1,5 @@
 //
-//  RAUserBO.m
+//  CITUserBO.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.
@@ -7,7 +7,7 @@
 //
 
 #import "CITUserBO.h"
-#import "RAHTTPSessionProvider+User.h"
+#import "CITHTTPSessionProvider+User.h"
 
 
 @implementation CITUserBO
@@ -20,7 +20,7 @@
                   success:(void(^)(CITUser *user))success
                   failure:(void(^)(NSError *error))failure {
     
-    RAHTTPSessionProvider *sessionManager = [RAHTTPSessionProvider sharedInstance];
+    CITHTTPSessionProvider *sessionManager = [CITHTTPSessionProvider sharedInstance];
     
     [sessionManager loginWithUsername:user
                              password:password

@@ -1,5 +1,5 @@
 //
-//  RAUserBO.h
+//  CITUserBO.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.

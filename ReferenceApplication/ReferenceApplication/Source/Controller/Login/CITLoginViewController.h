@@ -1,5 +1,5 @@
 //
-//  RALoginViewController.h
+//  CITLoginViewController.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.

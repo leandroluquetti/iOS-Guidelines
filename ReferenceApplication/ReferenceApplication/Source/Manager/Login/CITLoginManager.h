@@ -1,5 +1,5 @@
 //
-//  RALoginManager.h
+//  CITLoginManager.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.

@@ -1,5 +1,5 @@
 //
-//  RAWelcomeViewController.m
+//  CITWelcomeViewController.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/24/16.

@@ -47,15 +47,12 @@
 		2AE386011C52A12D001C8ED4 /* CITUserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386001C52A12D001C8ED4 /* CITUserBO.m */; };
 		2AE386021C52A12D001C8ED4 /* CITUserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386001C52A12D001C8ED4 /* CITUserBO.m */; };
 		2AE386031C52A12D001C8ED4 /* CITUserBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386001C52A12D001C8ED4 /* CITUserBO.m */; };
-		2AE3860A1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */; };
-		2AE3860B1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */; };
-		2AE3860C1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */; };
-		2AE3860D1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */; };
-		2AE3860E1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */; };
-		2AE3860F1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */; };
-		2AE386141C52A1AA001C8ED4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386131C52A1AA001C8ED4 /* LICENSE */; };
-		2AE386151C52A1AA001C8ED4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386131C52A1AA001C8ED4 /* LICENSE */; };
-		2AE386161C52A1AA001C8ED4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2AE386131C52A1AA001C8ED4 /* LICENSE */; };
+		2AE3860A1C52A19A001C8ED4 /* CITHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* CITHTTPSessionProvider.m */; };
+		2AE3860B1C52A19A001C8ED4 /* CITHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* CITHTTPSessionProvider.m */; };
+		2AE3860C1C52A19A001C8ED4 /* CITHTTPSessionProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386061C52A19A001C8ED4 /* CITHTTPSessionProvider.m */; };
+		2AE3860D1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m */; };
+		2AE3860E1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m */; };
+		2AE3860F1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE386091C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m */; };
 		2AE3861C1C52A365001C8ED4 /* CITLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3861B1C52A365001C8ED4 /* CITLoginManager.m */; };
 		2AE3861D1C52A365001C8ED4 /* CITLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3861B1C52A365001C8ED4 /* CITLoginManager.m */; };
 		2AE3861E1C52A365001C8ED4 /* CITLoginManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE3861B1C52A365001C8ED4 /* CITLoginManager.m */; };
@@ -183,11 +180,10 @@
 		2AE385FB1C52A10F001C8ED4 /* CITBaseBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITBaseBO.m; sourceTree = "<group>"; };
 		2AE385FF1C52A12D001C8ED4 /* CITUserBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITUserBO.h; sourceTree = "<group>"; };
 		2AE386001C52A12D001C8ED4 /* CITUserBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITUserBO.m; sourceTree = "<group>"; };
-		2AE386051C52A19A001C8ED4 /* RAHTTPSessionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RAHTTPSessionProvider.h; sourceTree = "<group>"; };
-		2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RAHTTPSessionProvider.m; sourceTree = "<group>"; };
-		2AE386081C52A19A001C8ED4 /* RAHTTPSessionProvider+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RAHTTPSessionProvider+User.h"; sourceTree = "<group>"; };
-		2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "RAHTTPSessionProvider+User.m"; sourceTree = "<group>"; };
-		2AE386131C52A1AA001C8ED4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2AE386051C52A19A001C8ED4 /* CITHTTPSessionProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITHTTPSessionProvider.h; sourceTree = "<group>"; };
+		2AE386061C52A19A001C8ED4 /* CITHTTPSessionProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITHTTPSessionProvider.m; sourceTree = "<group>"; };
+		2AE386081C52A19A001C8ED4 /* CITHTTPSessionProvider+User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CITHTTPSessionProvider+User.h"; sourceTree = "<group>"; };
+		2AE386091C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CITHTTPSessionProvider+User.m"; sourceTree = "<group>"; };
 		2AE3861A1C52A365001C8ED4 /* CITLoginManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITLoginManager.h; sourceTree = "<group>"; };
 		2AE3861B1C52A365001C8ED4 /* CITLoginManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITLoginManager.m; sourceTree = "<group>"; };
 		2AE3861F1C540C36001C8ED4 /* CITTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITTextField.h; sourceTree = "<group>"; };
@@ -560,8 +556,8 @@
 		2AE386041C52A19A001C8ED4 /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				2AE386051C52A19A001C8ED4 /* RAHTTPSessionProvider.h */,
-				2AE386061C52A19A001C8ED4 /* RAHTTPSessionProvider.m */,
+				2AE386051C52A19A001C8ED4 /* CITHTTPSessionProvider.h */,
+				2AE386061C52A19A001C8ED4 /* CITHTTPSessionProvider.m */,
 				2AE386071C52A19A001C8ED4 /* User */,
 			);
 			path = Service;
@@ -570,8 +566,8 @@
 		2AE386071C52A19A001C8ED4 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				2AE386081C52A19A001C8ED4 /* RAHTTPSessionProvider+User.h */,
-				2AE386091C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m */,
+				2AE386081C52A19A001C8ED4 /* CITHTTPSessionProvider+User.h */,
+				2AE386091C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m */,
 			);
 			path = User;
 			sourceTree = "<group>";
@@ -579,25 +575,8 @@
 		2AE386101C52A1AA001C8ED4 /* Third Party */ = {
 			isa = PBXGroup;
 			children = (
-				2AE386111C52A1AA001C8ED4 /* CITFramework */,
 			);
 			path = "Third Party";
-			sourceTree = "<group>";
-		};
-		2AE386111C52A1AA001C8ED4 /* CITFramework */ = {
-			isa = PBXGroup;
-			children = (
-				2AE386121C52A1AA001C8ED4 /* CITDatabase */,
-				2AE386131C52A1AA001C8ED4 /* LICENSE */,
-			);
-			path = CITFramework;
-			sourceTree = "<group>";
-		};
-		2AE386121C52A1AA001C8ED4 /* CITDatabase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = CITDatabase;
 			sourceTree = "<group>";
 		};
 		2AE386191C52A34D001C8ED4 /* Login */ = {
@@ -918,7 +897,6 @@
 				2AFE32BC1C6B503A00F4B4E8 /* StyleSettings.plist in Resources */,
 				2AB64C321C4FC45400C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C2D1C4FC45400C878CE /* Main.storyboard in Resources */,
-				2AE386161C52A1AA001C8ED4 /* LICENSE in Resources */,
 				2AB64C7D1C4FD89B00C878CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -938,7 +916,6 @@
 				2AFE32BA1C6B503A00F4B4E8 /* StyleSettings.plist in Resources */,
 				2AB64C551C4FD3C600C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C571C4FD3C600C878CE /* Main.storyboard in Resources */,
-				2AE386141C52A1AA001C8ED4 /* LICENSE in Resources */,
 				2AB64C931C50412900C878CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -951,7 +928,6 @@
 				2AFE32BB1C6B503A00F4B4E8 /* StyleSettings.plist in Resources */,
 				2AB64C631C4FD3CA00C878CE /* LaunchScreen.storyboard in Resources */,
 				2AB64C651C4FD3CA00C878CE /* Main.storyboard in Resources */,
-				2AE386151C52A1AA001C8ED4 /* LICENSE in Resources */,
 				2AB64C921C50412800C878CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1172,7 +1148,7 @@
 				2B6D6F011C7CCA35002DAA16 /* CITDataAccess+Client.m in Sources */,
 				2B6D6F0A1C7CCA35002DAA16 /* CITDatabaseSchema.m in Sources */,
 				2AE385E41C529109001C8ED4 /* CITBaseManager.m in Sources */,
-				2AE3860C1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
+				2AE3860C1C52A19A001C8ED4 /* CITHTTPSessionProvider.m in Sources */,
 				2AE386451C54F577001C8ED4 /* CITWelcomeView.m in Sources */,
 				2B6D6E691C7C9831002DAA16 /* CITClient.m in Sources */,
 				2AE3865C1C54FE29001C8ED4 /* CITCustomStoryboardSegue.m in Sources */,
@@ -1192,7 +1168,7 @@
 				2B6D6EC41C7CC386002DAA16 /* NSString+Additions.m in Sources */,
 				2AE385FE1C52A10F001C8ED4 /* CITBaseBO.m in Sources */,
 				2AE385DE1C5290C5001C8ED4 /* CITLoginViewController.m in Sources */,
-				2AE3860F1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */,
+				2AE3860F1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */,
 				2AE385D21C528D58001C8ED4 /* CITUser.m in Sources */,
 				2B6D6F071C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
 			);
@@ -1222,7 +1198,7 @@
 				2B6D6EFF1C7CCA35002DAA16 /* CITDataAccess+Client.m in Sources */,
 				2B6D6F081C7CCA35002DAA16 /* CITDatabaseSchema.m in Sources */,
 				2AE385E21C529109001C8ED4 /* CITBaseManager.m in Sources */,
-				2AE3860A1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
+				2AE3860A1C52A19A001C8ED4 /* CITHTTPSessionProvider.m in Sources */,
 				2AE386431C54F577001C8ED4 /* CITWelcomeView.m in Sources */,
 				2B6D6E671C7C9831002DAA16 /* CITClient.m in Sources */,
 				2AE3865A1C54FE29001C8ED4 /* CITCustomStoryboardSegue.m in Sources */,
@@ -1242,7 +1218,7 @@
 				2B6D6EC21C7CC386002DAA16 /* NSString+Additions.m in Sources */,
 				2AE385FC1C52A10F001C8ED4 /* CITBaseBO.m in Sources */,
 				2AE385DC1C5290C5001C8ED4 /* CITLoginViewController.m in Sources */,
-				2AE3860D1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */,
+				2AE3860D1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */,
 				2AE385D01C528D58001C8ED4 /* CITUser.m in Sources */,
 				2B6D6F051C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
 			);
@@ -1264,7 +1240,7 @@
 				2B6D6F001C7CCA35002DAA16 /* CITDataAccess+Client.m in Sources */,
 				2B6D6F091C7CCA35002DAA16 /* CITDatabaseSchema.m in Sources */,
 				2AE385E31C529109001C8ED4 /* CITBaseManager.m in Sources */,
-				2AE3860B1C52A19A001C8ED4 /* RAHTTPSessionProvider.m in Sources */,
+				2AE3860B1C52A19A001C8ED4 /* CITHTTPSessionProvider.m in Sources */,
 				2AE386441C54F577001C8ED4 /* CITWelcomeView.m in Sources */,
 				2B6D6E681C7C9831002DAA16 /* CITClient.m in Sources */,
 				2AE3865B1C54FE29001C8ED4 /* CITCustomStoryboardSegue.m in Sources */,
@@ -1284,7 +1260,7 @@
 				2B6D6EC31C7CC386002DAA16 /* NSString+Additions.m in Sources */,
 				2AE385FD1C52A10F001C8ED4 /* CITBaseBO.m in Sources */,
 				2AE385DD1C5290C5001C8ED4 /* CITLoginViewController.m in Sources */,
-				2AE3860E1C52A19A001C8ED4 /* RAHTTPSessionProvider+User.m in Sources */,
+				2AE3860E1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */,
 				2AE385D11C528D58001C8ED4 /* CITUser.m in Sources */,
 				2B6D6F061C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
 			);

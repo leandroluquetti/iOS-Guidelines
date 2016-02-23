@@ -1,5 +1,5 @@
 //
-//  RACustomStoryboardSegue.m
+//  CITCustomStoryboardSegue.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/24/16.

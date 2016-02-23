@@ -1,20 +1,20 @@
 //
-//  RAHTTPSessionManager+User.m
+//  CITHTTPSessionManager+User.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAHTTPSessionProvider+User.h"
+#import "CITHTTPSessionProvider+User.h"
 
 
-@implementation RAHTTPSessionProvider (User)
+@implementation CITHTTPSessionProvider (User)
 
 - (void)loginWithUsername:(NSString *)username
                  password:(NSString *)password
-                  success:(RARequestOperationBlockSuccess)success
-                  failure:(RARequestOperationBlockFailure)failure {
+                  success:(CITRequestOperationBlockSuccess)success
+                  failure:(CITRequestOperationBlockFailure)failure {
     NSString *loginProfileUser = [self loginEndpoint];
     
     NSDictionary *parameters = @{@"username": username,

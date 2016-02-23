@@ -1,5 +1,5 @@
 //
-//  RAWelcomeView.m
+//  CITWelcomeView.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/24/16.

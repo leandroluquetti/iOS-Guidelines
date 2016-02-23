@@ -1,5 +1,5 @@
 //
-//  RAHTTPSessionManager.h
+//  CITHTTPSessionManager.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.
@@ -8,10 +8,10 @@
 
 #import <AFNetworking/AFNetworking.h>
 
-typedef void (^RARequestOperationBlockSuccess) (NSURLSessionDataTask *task, id responseObject);
-typedef void (^RARequestOperationBlockFailure) (NSError *error);
+typedef void (^CITRequestOperationBlockSuccess) (NSURLSessionDataTask *task, id responseObject);
+typedef void (^CITRequestOperationBlockFailure) (NSError *error);
 
-@interface RAHTTPSessionProvider : AFHTTPSessionManager
+@interface CITHTTPSessionProvider : AFHTTPSessionManager
 
 + (instancetype)sharedInstance;
 - (NSString *)setEndpointVersion:(NSString *)endpoint;

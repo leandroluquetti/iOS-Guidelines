@@ -1,5 +1,5 @@
 //
-//  RADatabaseView.m
+//  CITDatabaseView.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 2/23/16.

@@ -1,5 +1,5 @@
 //
-//  RAClientTableViewController.m
+//  CITClientTableViewController.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 2/23/16.

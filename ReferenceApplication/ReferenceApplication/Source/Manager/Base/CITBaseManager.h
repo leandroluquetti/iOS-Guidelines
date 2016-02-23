@@ -1,5 +1,5 @@
 //
-//  RABaseManager.h
+//  CITBaseManager.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/21/16.

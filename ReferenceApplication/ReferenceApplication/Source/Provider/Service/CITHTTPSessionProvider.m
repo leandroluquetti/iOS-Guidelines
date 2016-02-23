@@ -1,30 +1,30 @@
 //
-//  RAHTTPSessionManager.m
+//  CITHTTPSessionManager.m
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/22/16.
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAHTTPSessionProvider.h"
+#import "CITHTTPSessionProvider.h"
 
 static NSString * const kBaseURL = @"https://api.parse.com";
 static NSString * const kEndPointVersion = @"1";
 
 
-@implementation RAHTTPSessionProvider
+@implementation CITHTTPSessionProvider
 
 
 #pragma mark - Singleton
 
 + (instancetype)sharedInstance {
     
-    static RAHTTPSessionProvider * _sharedInstance = nil;
+    static CITHTTPSessionProvider * _sharedInstance = nil;
     
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSURL *url = [NSURL URLWithString:kBaseURL];
-        _sharedInstance = [[RAHTTPSessionProvider alloc] initWithBaseURL:url];
+        _sharedInstance = [[CITHTTPSessionProvider alloc] initWithBaseURL:url];
     });
     
     return _sharedInstance;
