@@ -10,7 +10,7 @@
 #import "CITDatabaseView.h"
 #import "CITClientTableViewController.h"
 #import "CITDataAccess+Client.h"
-#import "RAClient.h"
+#import "CITClient.h"
 
 @interface CITDatabaseViewController ()
 
@@ -42,7 +42,7 @@
 
 - (IBAction)addClient:(id)sender {
     
-    RAClient *client = [self.mainView prepareClientObject];
+    CITClient *client = [self.mainView prepareClientObject];
     typeof(self) __weak __block weakSelf = self;
     [CITDataAccess insertRow:client withCompletionBlock:^(BOOL success) {
         [weakSelf.clientsTableViewController addNewClient:client];

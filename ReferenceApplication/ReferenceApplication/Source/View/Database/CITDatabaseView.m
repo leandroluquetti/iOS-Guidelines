@@ -7,7 +7,7 @@
 //
 
 #import "CITDatabaseView.h"
-#import "RAClient.h"
+#import "CITClient.h"
 
 @interface CITDatabaseView()
 
@@ -19,8 +19,8 @@
 
 @implementation CITDatabaseView
 
-- (RAClient *)prepareClientObject {
-    RAClient *client = [RAClient new];
+- (CITClient *)prepareClientObject {
+    CITClient *client = [CITClient new];
     client.registerId = @(self.clientIdTextField.text.integerValue);
     client.firstName = self.firstNameTextField.text;
     client.surname = self.surnameTextField.text;

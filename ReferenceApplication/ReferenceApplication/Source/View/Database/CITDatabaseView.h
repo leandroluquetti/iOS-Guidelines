@@ -8,11 +8,11 @@
 
 #import "CITBaseView.h"
 
-@class RAClient;
+@class CITClient;
 
 @interface CITDatabaseView : CITBaseView
 
 - (BOOL)textFieldIsEqualToClientsIdField:(UITextField *)textField;
-- (RAClient *)prepareClientObject;
+- (CITClient *)prepareClientObject;
 
 @end

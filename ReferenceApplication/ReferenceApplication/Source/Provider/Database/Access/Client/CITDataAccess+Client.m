@@ -7,14 +7,14 @@
 //
 
 #import "CITDataAccess+Client.h"
-#import "RAClient.h"
+#import "CITClient.h"
 
 @implementation CITDataAccess (Client)
 
 static NSString * const kInsertOrReplaceClient = @"INSERT OR REPLACE INTO client VALUES (?, ?, ?);";
 static NSString * const kSelectAllClient = @"SELECT * FROM client;";
 
-+ (void)insertRow:(RAClient *)entity withCompletionBlock:(CITDataAccessUpdateResponse)completion {
++ (void)insertRow:(CITClient *)entity withCompletionBlock:(CITDataAccessUpdateResponse)completion {
     CITDatabaseQueue *databaseQueue = [[CITDatabaseProvider sharedProvider] databaseQueue];
     [databaseQueue inTransaction:^(FMDatabase *db, BOOL *rollback) {
         BOOL success = NO;
@@ -39,7 +39,7 @@ static NSString * const kSelectAllClient = @"SELECT * FROM client;";
         FMResultSet *resultSet = [db executeQuery:kSelectAllClient];
         
         while (resultSet.next) {
-            RAClient *entity = [RAClient parseFromResultSet:resultSet];
+            CITClient *entity = [CITClient parseFromResultSet:resultSet];
             [entities addObject:entity];
         }
         

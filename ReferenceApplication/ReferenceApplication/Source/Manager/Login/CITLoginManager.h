@@ -6,13 +6,13 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseManager.h"
-#import "RAUser.h"
+#import "CITBaseManager.h"
+#import "CITUser.h"
 
-@interface RALoginManager : RABaseManager
+@interface CITLoginManager : CITBaseManager
 
 - (void)loginWithUsername:(NSString *)user
                  password:(NSString *)password
-                 withCompletionBlock:(void(^)(RAUser *user, BOOL success))completion;
+                 withCompletionBlock:(void(^)(CITUser *user, BOOL success))completion;
 
 @end

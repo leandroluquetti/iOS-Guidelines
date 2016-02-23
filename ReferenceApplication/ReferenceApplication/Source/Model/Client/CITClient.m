@@ -6,12 +6,12 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAClient.h"
+#import "CITClient.h"
 
-@implementation RAClient
+@implementation CITClient
 
 + (instancetype)parseFromResultSet:(FMResultSet *)resultSet {
-    RAClient *client = [RAClient new];
+    CITClient *client = [CITClient new];
     client.registerId = @([resultSet intForColumn:@"id"]);
     client.firstName = [resultSet stringForColumn:@"first_name"];
     client.surname = [resultSet stringForColumn:@"surname"];

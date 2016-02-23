@@ -1,5 +1,5 @@
 //
-//  RABaseBO.h
+//  RABaseManager.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/21/16.
@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RABaseBO : NSObject
+@interface CITBaseManager : NSObject
+
+@property (strong, nonatomic) NSOperationQueue *mainQueue;
 
 @end

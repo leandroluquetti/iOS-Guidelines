@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <FMResultSet.h>
 
-@interface RAClient : NSObject
+@interface CITClient : NSObject
 
 @property (copy, nonatomic) NSNumber *registerId;
 @property (copy, nonatomic) NSString *firstName;

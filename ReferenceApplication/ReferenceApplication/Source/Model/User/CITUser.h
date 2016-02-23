@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface RAUser : NSObject
+@interface CITUser : NSObject
 
 - (instancetype)initWithLoginResponse:(id)serviceResponse;
 

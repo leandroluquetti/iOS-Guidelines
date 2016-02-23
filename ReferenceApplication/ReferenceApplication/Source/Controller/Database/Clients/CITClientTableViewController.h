@@ -8,10 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@class RAClient;
+@class CITClient;
 
 @interface CITClientTableViewController : UITableViewController
 
-- (void)addNewClient:(RAClient *)client;
+- (void)addNewClient:(CITClient *)client;
 
 @end

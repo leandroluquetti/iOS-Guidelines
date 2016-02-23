@@ -8,11 +8,11 @@
 
 #import "CITDataAccess.h"
 
-@class RAClient;
+@class CITClient;
 
 @interface CITDataAccess (Client)
 
-+ (void)insertRow:(RAClient *)entity withCompletionBlock:(CITDataAccessUpdateResponse)completion;
++ (void)insertRow:(CITClient *)entity withCompletionBlock:(CITDataAccessUpdateResponse)completion;
 + (void)getAllWithCompletionBlock:(CITDataAccessQueryResponse)completion;
 
 @end

@@ -8,13 +8,13 @@
 
 #import "CITLoginViewController.h"
 #import "CITLoginView.h"
-#import "RALoginManager.h"
+#import "CITLoginManager.h"
 
 @interface CITLoginViewController ()
 
 @property (strong, nonatomic) IBOutlet CITLoginView *mainView;
-@property (strong, nonatomic) RALoginManager *manager;
-@property (strong, nonatomic) RAUser *loggedUser;
+@property (strong, nonatomic) CITLoginManager *manager;
+@property (strong, nonatomic) CITUser *loggedUser;
 
 @end
 
@@ -37,15 +37,15 @@
     return view;
 }
 
-- (RALoginManager *)manager {
+- (CITLoginManager *)manager {
     if (!_manager) {
-        _manager = [RALoginManager new];
+        _manager = [CITLoginManager new];
     }
     
     return _manager;
 }
 
-- (RAUser *)currentUser {
+- (CITUser *)currentUser {
     return self.loggedUser;
 }
 
@@ -92,12 +92,12 @@
     typeof(self) __weak __block weakSelf = self;
     [self.mainView showLoadingView:YES];
     
-    [self.manager loginWithUsername:username password:password withCompletionBlock:^(RAUser *user, BOOL success) {
+    [self.manager loginWithUsername:username password:password withCompletionBlock:^(CITUser *user, BOOL success) {
         [weakSelf handleLoginResponse:success withUser:user];
     }];
 }
 
-- (void)handleLoginResponse:(BOOL)status withUser:(RAUser *)user {
+- (void)handleLoginResponse:(BOOL)status withUser:(CITUser *)user {
     [self.mainView showLoadingView:NO];
     
     if (status) {

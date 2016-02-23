@@ -6,14 +6,14 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseBO.h"
-#import "RAUser.h"
+#import "CITBaseBO.h"
+#import "CITUser.h"
 
-@interface RAUserBO : RABaseBO
+@interface CITUserBO : CITBaseBO
 
 + (void)loginWithUsername:(NSString *)user
                  password:(NSString *)password
-                  success:(void(^)(RAUser *user))success
+                  success:(void(^)(CITUser *user))success
                   failure:(void(^)(NSError *error))failure;
 
 @end

@@ -1,5 +1,5 @@
 //
-//  RAConstants.h
+//  CITConstants.h
 //  ReferenceApplication
 //
 //  Created by SwatTeam on 1/24/16.
@@ -14,4 +14,4 @@ static NSString * const kFromLoginViewToWelcomeViewSegue = @"fromLoginViewToWelc
 static NSString * const kFromWelcomeViewToDatabaseViewSegue = @"fromWelcomeViewToDatabaseViewSegue";
 static NSString * const kClientTableViewControllerContainerSegue = @"clientTableViewControllerContainerSegue";
 
-#endif /* RAConstants_h */
+#endif /* CITConstants_h */

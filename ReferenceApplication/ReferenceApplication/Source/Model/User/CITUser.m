@@ -6,10 +6,10 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAUser.h"
+#import "CITUser.h"
 
 
-@implementation RAUser
+@implementation CITUser
 
 #pragma mark - Inits
 

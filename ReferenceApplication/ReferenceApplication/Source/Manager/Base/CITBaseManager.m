@@ -6,10 +6,10 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseManager.h"
+#import "CITBaseManager.h"
 
 
-@implementation RABaseManager
+@implementation CITBaseManager
 
 /**
  *  This Operation queue should be used whenever one view controller needs Pause Stop Resume or Cancel operations

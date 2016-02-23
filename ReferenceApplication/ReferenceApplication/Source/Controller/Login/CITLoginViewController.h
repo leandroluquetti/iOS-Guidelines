@@ -7,10 +7,10 @@
 //
 
 #import "CITBaseViewController.h"
-#import "RAUser.h"
+#import "CITUser.h"
 
 @interface CITLoginViewController : CITBaseViewController
 
-- (RAUser *)currentUser;
+- (CITUser *)currentUser;
 
 @end

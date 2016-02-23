@@ -6,18 +6,18 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAUserBO.h"
+#import "CITUserBO.h"
 #import "RAHTTPSessionProvider+User.h"
 
 
-@implementation RAUserBO
+@implementation CITUserBO
 
 
 #pragma mark - Services
 
 + (void)loginWithUsername:(NSString *)user
                  password:(NSString *)password
-                  success:(void(^)(RAUser *user))success
+                  success:(void(^)(CITUser *user))success
                   failure:(void(^)(NSError *error))failure {
     
     RAHTTPSessionProvider *sessionManager = [RAHTTPSessionProvider sharedInstance];
@@ -26,7 +26,7 @@
                              password:password
                               success:^(NSURLSessionDataTask *task, id responseObject)
      {
-         RAUser *user = [[RAUser alloc] initWithLoginResponse:responseObject];
+         CITUser *user = [[CITUser alloc] initWithLoginResponse:responseObject];
          success(user);
          
      } failure:^(NSError *error) {

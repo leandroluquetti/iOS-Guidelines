@@ -8,7 +8,7 @@
 
 #import "CITClientTableViewController.h"
 #import "CITDataAccess+Client.h"
-#import "RAClient.h"
+#import "CITClient.h"
 
 @interface CITClientTableViewController ()
 
@@ -46,7 +46,7 @@ static NSString * const kClientTableViewReusableIdentifier = @"clientTableViewRe
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    RAClient *client = self.clients[indexPath.row];
+    CITClient *client = self.clients[indexPath.row];
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:kClientTableViewReusableIdentifier];
     
@@ -61,7 +61,7 @@ static NSString * const kClientTableViewReusableIdentifier = @"clientTableViewRe
 
 #pragma mark - Own methods
 
-- (void)addNewClient:(RAClient *)client {
+- (void)addNewClient:(CITClient *)client {
     [self.clients insertObject:client atIndex:0];
     [self.tableView reloadData];
 }

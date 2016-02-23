@@ -7,10 +7,10 @@
 //
 
 #import "CITBaseViewController.h"
-#import "RAUser.h"
+#import "CITUser.h"
 
 @interface CITWelcomeViewController : CITBaseViewController
 
-@property (strong, nonatomic) RAUser *user;
+@property (strong, nonatomic) CITUser *user;
 
 @end
