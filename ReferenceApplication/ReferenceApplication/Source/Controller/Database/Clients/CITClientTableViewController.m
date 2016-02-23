@@ -6,17 +6,17 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAClientTableViewController.h"
+#import "CITClientTableViewController.h"
 #import "CITDataAccess+Client.h"
 #import "RAClient.h"
 
-@interface RAClientTableViewController ()
+@interface CITClientTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *clients;
 
 @end
 
-@implementation RAClientTableViewController
+@implementation CITClientTableViewController
 
 static NSString * const kClientTableViewReusableIdentifier = @"clientTableViewReusableIdentifier";
 

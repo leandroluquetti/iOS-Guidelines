@@ -10,7 +10,7 @@
 
 @class RAClient;
 
-@interface RADatabaseView : CITBaseView
+@interface CITDatabaseView : CITBaseView
 
 - (BOOL)textFieldIsEqualToClientsIdField:(UITextField *)textField;
 - (RAClient *)prepareClientObject;

@@ -6,14 +6,14 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseViewController.h"
+#import "CITBaseViewController.h"
 
-@interface RABaseViewController ()
+@interface CITBaseViewController ()
 
 @end
 
 
-@implementation RABaseViewController
+@implementation CITBaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

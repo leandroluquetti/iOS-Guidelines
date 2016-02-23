@@ -10,7 +10,7 @@
 
 @class RAClient;
 
-@interface RAClientTableViewController : UITableViewController
+@interface CITClientTableViewController : UITableViewController
 
 - (void)addNewClient:(RAClient *)client;
 

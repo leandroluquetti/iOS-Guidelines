@@ -6,10 +6,10 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseViewController.h"
+#import "CITBaseViewController.h"
 #import "RAUser.h"
 
-@interface RAWelcomeViewController : RABaseViewController
+@interface CITWelcomeViewController : CITBaseViewController
 
 @property (strong, nonatomic) RAUser *user;
 

@@ -6,8 +6,8 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseViewController.h"
+#import "CITBaseViewController.h"
 
-@interface RADatabaseViewController : RABaseViewController
+@interface CITDatabaseViewController : CITBaseViewController
 
 @end

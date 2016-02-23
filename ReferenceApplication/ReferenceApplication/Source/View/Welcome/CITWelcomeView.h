@@ -8,7 +8,7 @@
 
 #import "CITBaseView.h"
 
-@interface RAWelcomeView : CITBaseView
+@interface CITWelcomeView : CITBaseView
 
 - (void)showWelcomeMessageWithName:(NSString *)name;
 

@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RACustomStoryboardSegue : UIStoryboardSegue
+@interface CITCustomStoryboardSegue : UIStoryboardSegue
 
 @end

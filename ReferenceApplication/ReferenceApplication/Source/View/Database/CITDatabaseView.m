@@ -6,10 +6,10 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RADatabaseView.h"
+#import "CITDatabaseView.h"
 #import "RAClient.h"
 
-@interface RADatabaseView()
+@interface CITDatabaseView()
 
 @property (weak, nonatomic) IBOutlet UITextField *clientIdTextField;
 @property (weak, nonatomic) IBOutlet UITextField *firstNameTextField;
@@ -17,7 +17,7 @@
 
 @end
 
-@implementation RADatabaseView
+@implementation CITDatabaseView
 
 - (RAClient *)prepareClientObject {
     RAClient *client = [RAClient new];

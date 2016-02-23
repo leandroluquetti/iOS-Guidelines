@@ -6,9 +6,9 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAWelcomeView.h"
+#import "CITWelcomeView.h"
 
-@interface RAWelcomeView()
+@interface CITWelcomeView()
 
 @property (weak, nonatomic) IBOutlet UILabel *loginSuccessLabel;
 @property (weak, nonatomic) IBOutlet UILabel *welcomeLabel;
@@ -16,7 +16,7 @@
 @end
 
 
-@implementation RAWelcomeView
+@implementation CITWelcomeView
 
 
 #pragma mark - Override

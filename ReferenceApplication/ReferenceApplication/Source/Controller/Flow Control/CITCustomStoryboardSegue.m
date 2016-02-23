@@ -12,16 +12,16 @@
  *  Should be create one UIStoryboardSegue subclass for each Storyboard
  */
 
-#import "RACustomStoryboardSegue.h"
+#import "CITCustomStoryboardSegue.h"
 
 /*
  View Controllers
  */
-#import "RALoginViewController.h"
-#import "RAWelcomeViewController.h"
+#import "CITLoginViewController.h"
+#import "CITWelcomeViewController.h"
 
 
-@implementation RACustomStoryboardSegue
+@implementation CITCustomStoryboardSegue
 
 - (void)perform {
     if ([self.identifier isEqualToString:kFromLoginViewToWelcomeViewSegue]) {
@@ -36,9 +36,9 @@
  *  All data requied for this transition should be keep inside this method
  */
 - (void)performSegueFromLoginViewToWelcomeView {
-    RALoginViewController *loginViewController = (RALoginViewController *)self.sourceViewController;
+    CITLoginViewController *loginViewController = (CITLoginViewController *)self.sourceViewController;
     UINavigationController *navigationController = (UINavigationController *)self.destinationViewController;
-    RAWelcomeViewController *welcomeViewController = (RAWelcomeViewController *)navigationController.viewControllers[0];
+    CITWelcomeViewController *welcomeViewController = (CITWelcomeViewController *)navigationController.viewControllers[0];
     
     
     welcomeViewController.user = [loginViewController currentUser];

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -8,7 +9,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RALoginViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="CITLoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -99,7 +100,7 @@
                     </view>
                     <connections>
                         <outlet property="mainView" destination="8bC-Xf-vdC" id="dgZ-Tf-9Np"/>
-                        <segue destination="V0u-ax-tpg" kind="custom" identifier="fromLoginViewToWelcomeViewSegue" customClass="RACustomStoryboardSegue" id="tez-Ld-ZEt"/>
+                        <segue destination="V0u-ax-tpg" kind="custom" identifier="fromLoginViewToWelcomeViewSegue" customClass="CITCustomStoryboardSegue" id="tez-Ld-ZEt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -125,12 +126,12 @@
         <!--Welcome-->
         <scene sceneID="QSh-rA-uCk">
             <objects>
-                <viewController title="Welcome" id="bq4-CC-Jfy" customClass="RAWelcomeViewController" sceneMemberID="viewController">
+                <viewController title="Welcome" id="bq4-CC-Jfy" customClass="CITWelcomeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5QW-fZ-Lge"/>
                         <viewControllerLayoutGuide type="bottom" id="iKT-UI-aab"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kWT-ZU-0oC" customClass="RAWelcomeView">
+                    <view key="view" contentMode="scaleToFill" id="kWT-ZU-0oC" customClass="CITWelcomeView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -200,7 +201,7 @@
                     <navigationItem key="navigationItem" title="Welcome" id="md7-3l-wFf"/>
                     <connections>
                         <outlet property="mainView" destination="kWT-ZU-0oC" id="rYW-29-8jX"/>
-                        <segue destination="hzj-Is-zDd" kind="custom" identifier="fromWelcomeViewToDatabaseViewSegue" customClass="RACustomStoryboardSegue" id="luQ-Kf-KVn"/>
+                        <segue destination="hzj-Is-zDd" kind="custom" identifier="fromWelcomeViewToDatabaseViewSegue" customClass="CITCustomStoryboardSegue" id="luQ-Kf-KVn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cXg-3u-QiS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -210,12 +211,12 @@
         <!--Database example-->
         <scene sceneID="NtU-tq-tIp">
             <objects>
-                <viewController title="Database example" id="hzj-Is-zDd" customClass="RADatabaseViewController" sceneMemberID="viewController">
+                <viewController title="Database example" id="hzj-Is-zDd" customClass="CITDatabaseViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="tl3-2j-QUT"/>
                         <viewControllerLayoutGuide type="bottom" id="MRy-T6-hy1"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="rXf-bX-hro" customClass="RADatabaseView">
+                    <view key="view" contentMode="scaleToFill" id="rXf-bX-hro" customClass="CITDatabaseView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -305,7 +306,7 @@
         <!--Client Table View Controller-->
         <scene sceneID="gdb-bm-Kgz">
             <objects>
-                <tableViewController id="mOF-cq-Iew" customClass="RAClientTableViewController" sceneMemberID="viewController">
+                <tableViewController id="mOF-cq-Iew" customClass="CITClientTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="kqd-mM-JNJ">
                         <rect key="frame" x="0.0" y="0.0" width="560" height="388"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

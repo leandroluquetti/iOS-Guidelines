@@ -6,20 +6,20 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RADatabaseViewController.h"
-#import "RADatabaseView.h"
-#import "RAClientTableViewController.h"
+#import "CITDatabaseViewController.h"
+#import "CITDatabaseView.h"
+#import "CITClientTableViewController.h"
 #import "CITDataAccess+Client.h"
 #import "RAClient.h"
 
-@interface RADatabaseViewController ()
+@interface CITDatabaseViewController ()
 
-@property (weak, nonatomic) RAClientTableViewController *clientsTableViewController;
-@property (readonly, nonatomic) RADatabaseView *mainView;
+@property (weak, nonatomic) CITClientTableViewController *clientsTableViewController;
+@property (readonly, nonatomic) CITDatabaseView *mainView;
 
 @end
 
-@implementation RADatabaseViewController
+@implementation CITDatabaseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -71,8 +71,8 @@
 
 #pragma mark - Getters/Setters
 
-- (RADatabaseView *)mainView {
-    return (RADatabaseView *)self.view;
+- (CITDatabaseView *)mainView {
+    return (CITDatabaseView *)self.view;
 }
 
 @end

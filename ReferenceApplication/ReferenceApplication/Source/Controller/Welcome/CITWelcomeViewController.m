@@ -6,18 +6,18 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RAWelcomeViewController.h"
-#import "RAWelcomeView.h"
+#import "CITWelcomeViewController.h"
+#import "CITWelcomeView.h"
 
-@interface RAWelcomeViewController() <UITableViewDataSource, UITableViewDelegate>
+@interface CITWelcomeViewController() <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet RAWelcomeView *mainView;
+@property (strong, nonatomic) IBOutlet CITWelcomeView *mainView;
 @property (strong, nonatomic) NSArray *dataSource;
 
 @end
 
 
-@implementation RAWelcomeViewController
+@implementation CITWelcomeViewController
 
 static NSString * const kWelcomeTableViewReusableIdentifier = @"welcomeTableViewReusableIdentifier";
 
@@ -35,8 +35,8 @@ static NSString * const kWelcomeTableViewReusableIdentifier = @"welcomeTableView
 
 #pragma mark - Getters/Setters
 
-- (RAWelcomeView *)mainView {
-    RAWelcomeView *__weak view = (RAWelcomeView *)self.view;
+- (CITWelcomeView *)mainView {
+    CITWelcomeView *__weak view = (CITWelcomeView *)self.view;
     
     return view;
 }

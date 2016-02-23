@@ -6,11 +6,11 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RALoginViewController.h"
+#import "CITLoginViewController.h"
 #import "CITLoginView.h"
 #import "RALoginManager.h"
 
-@interface RALoginViewController ()
+@interface CITLoginViewController ()
 
 @property (strong, nonatomic) IBOutlet CITLoginView *mainView;
 @property (strong, nonatomic) RALoginManager *manager;
@@ -19,7 +19,7 @@
 @end
 
 
-@implementation RALoginViewController
+@implementation CITLoginViewController
 
 
 #pragma mark - Override
