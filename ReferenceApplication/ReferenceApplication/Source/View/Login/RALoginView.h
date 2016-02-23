@@ -6,7 +6,7 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseView.h"
+#import "CITBaseView.h"
 
 typedef NS_ENUM(NSInteger, RALoginFieldType) {
     RALoginFieldUser,
@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, RALoginFieldType) {
     RALoginFieldAll
 };
 
-@interface RALoginView : RABaseView
+@interface RALoginView : CITBaseView
 
 - (NSString *)userText;
 - (NSString *)passwordText;

@@ -35,9 +35,9 @@
 		2AE385E21C529109001C8ED4 /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385E11C529109001C8ED4 /* RABaseManager.m */; };
 		2AE385E31C529109001C8ED4 /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385E11C529109001C8ED4 /* RABaseManager.m */; };
 		2AE385E41C529109001C8ED4 /* RABaseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385E11C529109001C8ED4 /* RABaseManager.m */; };
-		2AE385EE1C5291CE001C8ED4 /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* RABaseView.m */; };
-		2AE385EF1C5291CE001C8ED4 /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* RABaseView.m */; };
-		2AE385F01C5291CE001C8ED4 /* RABaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* RABaseView.m */; };
+		2AE385EE1C5291CE001C8ED4 /* CITBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */; };
+		2AE385EF1C5291CE001C8ED4 /* CITBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */; };
+		2AE385F01C5291CE001C8ED4 /* CITBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */; };
 		2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
 		2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
 		2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2AE385F31C5291FD001C8ED4 /* RALoginView.m */; };
@@ -175,8 +175,8 @@
 		2AE385DB1C5290C5001C8ED4 /* RALoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginViewController.m; sourceTree = "<group>"; };
 		2AE385E01C529109001C8ED4 /* RABaseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseManager.h; sourceTree = "<group>"; };
 		2AE385E11C529109001C8ED4 /* RABaseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseManager.m; sourceTree = "<group>"; };
-		2AE385EC1C5291CE001C8ED4 /* RABaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseView.h; sourceTree = "<group>"; };
-		2AE385ED1C5291CE001C8ED4 /* RABaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RABaseView.m; sourceTree = "<group>"; };
+		2AE385EC1C5291CE001C8ED4 /* CITBaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITBaseView.h; sourceTree = "<group>"; };
+		2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITBaseView.m; sourceTree = "<group>"; };
 		2AE385F21C5291FD001C8ED4 /* RALoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RALoginView.h; sourceTree = "<group>"; };
 		2AE385F31C5291FD001C8ED4 /* RALoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RALoginView.m; sourceTree = "<group>"; };
 		2AE385FA1C52A10F001C8ED4 /* RABaseBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RABaseBO.h; sourceTree = "<group>"; };
@@ -515,8 +515,8 @@
 		2AE385EB1C5291CE001C8ED4 /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				2AE385EC1C5291CE001C8ED4 /* RABaseView.h */,
-				2AE385ED1C5291CE001C8ED4 /* RABaseView.m */,
+				2AE385EC1C5291CE001C8ED4 /* CITBaseView.h */,
+				2AE385ED1C5291CE001C8ED4 /* CITBaseView.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -1184,7 +1184,7 @@
 				2AE385F61C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C771C4FD60D00C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED31C7CC386002DAA16 /* UIView+Animations.m in Sources */,
-				2AE385F01C5291CE001C8ED4 /* RABaseView.m in Sources */,
+				2AE385F01C5291CE001C8ED4 /* CITBaseView.m in Sources */,
 				2B6D6E5D1C7C9583002DAA16 /* RADatabaseViewController.m in Sources */,
 				2B6D6ED01C7CC386002DAA16 /* UILabel+Additions.m in Sources */,
 				2AE386031C52A12D001C8ED4 /* RAUserBO.m in Sources */,
@@ -1234,7 +1234,7 @@
 				2AE385F41C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C8F1C50411700C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED11C7CC386002DAA16 /* UIView+Animations.m in Sources */,
-				2AE385EE1C5291CE001C8ED4 /* RABaseView.m in Sources */,
+				2AE385EE1C5291CE001C8ED4 /* CITBaseView.m in Sources */,
 				2B6D6E5B1C7C9583002DAA16 /* RADatabaseViewController.m in Sources */,
 				2B6D6ECE1C7CC386002DAA16 /* UILabel+Additions.m in Sources */,
 				2AE386011C52A12D001C8ED4 /* RAUserBO.m in Sources */,
@@ -1276,7 +1276,7 @@
 				2AE385F51C5291FD001C8ED4 /* RALoginView.m in Sources */,
 				2AB64C8E1C50411600C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED21C7CC386002DAA16 /* UIView+Animations.m in Sources */,
-				2AE385EF1C5291CE001C8ED4 /* RABaseView.m in Sources */,
+				2AE385EF1C5291CE001C8ED4 /* CITBaseView.m in Sources */,
 				2B6D6E5C1C7C9583002DAA16 /* RADatabaseViewController.m in Sources */,
 				2B6D6ECF1C7CC386002DAA16 /* UILabel+Additions.m in Sources */,
 				2AE386021C52A12D001C8ED4 /* RAUserBO.m in Sources */,

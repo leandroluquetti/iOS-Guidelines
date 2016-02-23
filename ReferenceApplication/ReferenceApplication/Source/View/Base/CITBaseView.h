@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RABaseView : UIControl
+@interface CITBaseView : UIControl
 
 @end

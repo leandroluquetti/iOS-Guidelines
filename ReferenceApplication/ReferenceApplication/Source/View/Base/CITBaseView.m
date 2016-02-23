@@ -6,10 +6,10 @@
 //  Copyright © 2016 CI&T. All rights reserved.
 //
 
-#import "RABaseView.h"
+#import "CITBaseView.h"
 
 
-@implementation RABaseView
+@implementation CITBaseView
 
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.
