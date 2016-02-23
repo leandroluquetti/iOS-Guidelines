@@ -12,7 +12,7 @@
 
 @interface CITLoginViewController ()
 
-@property (strong, nonatomic) IBOutlet CITLoginView *mainView;
+@property (readonly, nonatomic) CITLoginView *mainView;
 @property (strong, nonatomic) CITLoginManager *manager;
 @property (strong, nonatomic) CITUser *loggedUser;
 
@@ -32,9 +32,7 @@
 #pragma mark - Getters/Setters
 
 - (CITLoginView *)mainView {
-    CITLoginView *__weak view = (CITLoginView *)self.view;
-    
-    return view;
+    return (CITLoginView *)self.view;
 }
 
 - (CITLoginManager *)manager {

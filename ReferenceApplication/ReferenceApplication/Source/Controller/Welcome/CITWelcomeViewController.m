@@ -11,7 +11,7 @@
 
 @interface CITWelcomeViewController() <UITableViewDataSource, UITableViewDelegate>
 
-@property (strong, nonatomic) IBOutlet CITWelcomeView *mainView;
+@property (readonly, nonatomic) CITWelcomeView *mainView;
 @property (strong, nonatomic) NSArray *dataSource;
 
 @end
@@ -36,9 +36,7 @@ static NSString * const kWelcomeTableViewReusableIdentifier = @"welcomeTableView
 #pragma mark - Getters/Setters
 
 - (CITWelcomeView *)mainView {
-    CITWelcomeView *__weak view = (CITWelcomeView *)self.view;
-    
-    return view;
+    return (CITWelcomeView *)self.view;;
 }
 
 
