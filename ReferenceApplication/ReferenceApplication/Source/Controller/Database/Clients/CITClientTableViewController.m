@@ -7,13 +7,14 @@
 //
 
 #import "CITClientTableViewController.h"
+#import "CITDatabaseExampleManager.h"
 #import "CITDataAccess+Client.h"
 #import "CITClient.h"
 
 @interface CITClientTableViewController ()
 
 @property (nonatomic, strong) NSMutableArray *clients;
-
+@property (nonatomic, strong) CITDatabaseExampleManager *manager;
 @end
 
 @implementation CITClientTableViewController
@@ -24,8 +25,7 @@ static NSString * const kClientTableViewReusableIdentifier = @"clientTableViewRe
     [super viewDidLoad];
     
     typeof(self) __weak __block weakSelf = self;
-    
-    [CITDataAccess getAllWithCompletionBlock:^(NSArray *result) {
+    [self.manager getAllClientsWithCompletionBlock:^(NSArray *result) {
         weakSelf.clients = [NSMutableArray arrayWithArray:result];
         [weakSelf.tableView reloadData];
     }];
@@ -63,7 +63,20 @@ static NSString * const kClientTableViewReusableIdentifier = @"clientTableViewRe
 
 - (void)addNewClient:(CITClient *)client {
     [self.clients insertObject:client atIndex:0];
-    [self.tableView reloadData];
+    NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
+    [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
+    //[self.tableView reloadData];
+}
+
+
+#pragma mark - Getters/Setters
+
+- (CITDatabaseExampleManager *)manager {
+    if (!_manager) {
+        _manager = [CITDatabaseExampleManager new];
+    }
+    
+    return _manager;
 }
 
 @end

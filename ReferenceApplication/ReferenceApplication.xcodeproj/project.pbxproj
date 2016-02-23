@@ -128,6 +128,12 @@
 		2B6D6F0D1C7CD066002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */; };
 		2B6D6F0E1C7CD066002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */; };
 		2B6D6F0F1C7CD066002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */; };
+		2B6D6F131C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */; };
+		2B6D6F141C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */; };
+		2B6D6F151C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */; };
+		2B6D6F1E1C7CE67F002DAA16 /* CITClientBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */; };
+		2B6D6F1F1C7CE67F002DAA16 /* CITClientBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */; };
+		2B6D6F201C7CE67F002DAA16 /* CITClientBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */; };
 		339952F580EA966E9B977260 /* libPods-ReferenceApplicationDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEA14BB8C26889968C9874F /* libPods-ReferenceApplicationDev.a */; };
 		620A9510F41050AC32E643ED /* libPods-ReferenceApplicationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCE91C5C5836B185326CED1 /* libPods-ReferenceApplicationTests.a */; };
 		6235AD8D86C58D065FE79065 /* libPods-ReferenceApplicationStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A089FFCEF478FEFE5825E51 /* libPods-ReferenceApplicationStage.a */; };
@@ -233,6 +239,10 @@
 		2B6D6EFB1C7CCA35002DAA16 /* CITDatabaseSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITDatabaseSchema.m; sourceTree = "<group>"; };
 		2B6D6F0B1C7CD066002DAA16 /* CITKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CITKeychain.h; path = Keychain/CITKeychain.h; sourceTree = "<group>"; };
 		2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CITKeychain.m; path = Keychain/CITKeychain.m; sourceTree = "<group>"; };
+		2B6D6F111C7CE2D1002DAA16 /* CITDatabaseExampleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CITDatabaseExampleManager.h; path = "ReferenceApplication/Source/Manager/Database Example/CITDatabaseExampleManager.h"; sourceTree = SOURCE_ROOT; };
+		2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CITDatabaseExampleManager.m; path = "ReferenceApplication/Source/Manager/Database Example/CITDatabaseExampleManager.m"; sourceTree = SOURCE_ROOT; };
+		2B6D6F1C1C7CE67F002DAA16 /* CITClientBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CITClientBO.h; path = Client/CITClientBO.h; sourceTree = "<group>"; };
+		2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CITClientBO.m; path = Client/CITClientBO.m; sourceTree = "<group>"; };
 		31A0785F8057906E0F4225E4 /* Pods-ReferenceApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationTests/Pods-ReferenceApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3248FA679E32B15AA6D9B422 /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		4E67E99AB71D59895017B8F0 /* Pods-ReferenceApplicationProd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.release.xcconfig"; sourceTree = "<group>"; };
@@ -370,6 +380,7 @@
 			children = (
 				2AE385F91C52A10F001C8ED4 /* Base */,
 				2AE385F81C52A0F1001C8ED4 /* User */,
+				2B6D6F161C7CE58D002DAA16 /* Client */,
 			);
 			path = Business;
 			sourceTree = "<group>";
@@ -403,6 +414,7 @@
 			children = (
 				2AE385DF1C529109001C8ED4 /* Base */,
 				2AE386191C52A34D001C8ED4 /* Login */,
+				2B6D6F101C7CE1D7002DAA16 /* Database Example */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -748,6 +760,25 @@
 				2B6D6EFB1C7CCA35002DAA16 /* CITDatabaseSchema.m */,
 			);
 			path = Schema;
+			sourceTree = "<group>";
+		};
+		2B6D6F101C7CE1D7002DAA16 /* Database Example */ = {
+			isa = PBXGroup;
+			children = (
+				2B6D6F111C7CE2D1002DAA16 /* CITDatabaseExampleManager.h */,
+				2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */,
+			);
+			name = "Database Example";
+			path = Login;
+			sourceTree = "<group>";
+		};
+		2B6D6F161C7CE58D002DAA16 /* Client */ = {
+			isa = PBXGroup;
+			children = (
+				2B6D6F1C1C7CE67F002DAA16 /* CITClientBO.h */,
+				2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */,
+			);
+			name = Client;
 			sourceTree = "<group>";
 		};
 		B73C988BBF134D1D2EF20A84 /* Frameworks */ = {
@@ -1161,6 +1192,7 @@
 				2AB64C771C4FD60D00C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED31C7CC386002DAA16 /* UIView+Animations.m in Sources */,
 				2AE385F01C5291CE001C8ED4 /* CITBaseView.m in Sources */,
+				2B6D6F201C7CE67F002DAA16 /* CITClientBO.m in Sources */,
 				2B6D6E5D1C7C9583002DAA16 /* CITDatabaseViewController.m in Sources */,
 				2B6D6ED01C7CC386002DAA16 /* UILabel+Additions.m in Sources */,
 				2AE386031C52A12D001C8ED4 /* CITUserBO.m in Sources */,
@@ -1170,6 +1202,7 @@
 				2AE385DE1C5290C5001C8ED4 /* CITLoginViewController.m in Sources */,
 				2AE3860F1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */,
 				2AE385D21C528D58001C8ED4 /* CITUser.m in Sources */,
+				2B6D6F151C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */,
 				2B6D6F071C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1211,6 +1244,7 @@
 				2AB64C8F1C50411700C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED11C7CC386002DAA16 /* UIView+Animations.m in Sources */,
 				2AE385EE1C5291CE001C8ED4 /* CITBaseView.m in Sources */,
+				2B6D6F1E1C7CE67F002DAA16 /* CITClientBO.m in Sources */,
 				2B6D6E5B1C7C9583002DAA16 /* CITDatabaseViewController.m in Sources */,
 				2B6D6ECE1C7CC386002DAA16 /* UILabel+Additions.m in Sources */,
 				2AE386011C52A12D001C8ED4 /* CITUserBO.m in Sources */,
@@ -1220,6 +1254,7 @@
 				2AE385DC1C5290C5001C8ED4 /* CITLoginViewController.m in Sources */,
 				2AE3860D1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */,
 				2AE385D01C528D58001C8ED4 /* CITUser.m in Sources */,
+				2B6D6F131C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */,
 				2B6D6F051C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1253,6 +1288,7 @@
 				2AB64C8E1C50411600C878CE /* AppDelegate.m in Sources */,
 				2B6D6ED21C7CC386002DAA16 /* UIView+Animations.m in Sources */,
 				2AE385EF1C5291CE001C8ED4 /* CITBaseView.m in Sources */,
+				2B6D6F1F1C7CE67F002DAA16 /* CITClientBO.m in Sources */,
 				2B6D6E5C1C7C9583002DAA16 /* CITDatabaseViewController.m in Sources */,
 				2B6D6ECF1C7CC386002DAA16 /* UILabel+Additions.m in Sources */,
 				2AE386021C52A12D001C8ED4 /* CITUserBO.m in Sources */,
@@ -1262,6 +1298,7 @@
 				2AE385DD1C5290C5001C8ED4 /* CITLoginViewController.m in Sources */,
 				2AE3860E1C52A19A001C8ED4 /* CITHTTPSessionProvider+User.m in Sources */,
 				2AE385D11C528D58001C8ED4 /* CITUser.m in Sources */,
+				2B6D6F141C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */,
 				2B6D6F061C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

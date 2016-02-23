@@ -20,6 +20,12 @@
 @implementation CITDatabaseView
 
 - (CITClient *)prepareClientObject {
+    if ([self.clientIdTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length <= 0 ||
+        [self.firstNameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length <= 0 ||
+        [self.surnameTextField.text stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet]].length > 0 ) {
+        return nil;
+    }
+    
     CITClient *client = [CITClient new];
     client.registerId = @(self.clientIdTextField.text.integerValue);
     client.firstName = self.firstNameTextField.text;

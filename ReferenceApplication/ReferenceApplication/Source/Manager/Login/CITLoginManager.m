@@ -14,12 +14,14 @@
 
 - (void)loginWithUsername:(NSString *)user
                  password:(NSString *)password
-                  withCompletionBlock:(void(^)(CITUser *user, BOOL success))completion {
+      withCompletionBlock:(void(^)(CITUser *user, BOOL success))completion {
 
-    [CITUserBO loginWithUsername:user password:password success:^(CITUser *user) {
-        completion(user, YES);
-    } failure:^(NSError *error) {
-        completion(nil, NO);
+    [self.mainQueue addOperationWithBlock:^{
+        [CITUserBO loginWithUsername:user password:password success:^(CITUser *user) {
+            completion(user, YES);
+        } failure:^(NSError *error) {
+            completion(nil, NO);
+        }];
     }];
 }
 

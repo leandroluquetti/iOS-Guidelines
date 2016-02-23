@@ -7,6 +7,7 @@
 //
 
 #import "CITDatabaseViewController.h"
+#import "CITDatabaseExampleManager.h"
 #import "CITDatabaseView.h"
 #import "CITClientTableViewController.h"
 #import "CITDataAccess+Client.h"
@@ -16,6 +17,7 @@
 
 @property (weak, nonatomic) CITClientTableViewController *clientsTableViewController;
 @property (readonly, nonatomic) CITDatabaseView *mainView;
+@property (strong, nonatomic) CITDatabaseExampleManager *manager;
 
 @end
 
@@ -43,12 +45,33 @@
 - (IBAction)addClient:(id)sender {
     
     CITClient *client = [self.mainView prepareClientObject];
-    typeof(self) __weak __block weakSelf = self;
-    [CITDataAccess insertRow:client withCompletionBlock:^(BOOL success) {
-        [weakSelf.clientsTableViewController addNewClient:client];
-    }];
+    if (!client) {
+        [self showFillAlert];
+    } else {
+    
+        typeof(self) __weak __block weakSelf = self;
+        
+        [self.manager insertClient:client withCompletionBlock:^(BOOL success) {
+            
+            if (success) {
+                [weakSelf.clientsTableViewController addNewClient:client];
+            }
+        }];
+    }
 }
 
+- (void)showFillAlert {
+
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"databaseExample.alert.title", @"OOPS")
+                                                                   message:NSLocalizedString(@"databaseExample.alert.message", @"Please, fill in all fields.")
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 #pragma mark - TextField Delegate
 
@@ -73,6 +96,14 @@
 
 - (CITDatabaseView *)mainView {
     return (CITDatabaseView *)self.view;
+}
+
+- (CITDatabaseExampleManager *)manager {
+    if (!_manager) {
+        _manager = [CITDatabaseExampleManager new];
+    }
+    
+    return _manager;
 }
 
 @end
