@@ -67,6 +67,7 @@ static NSString * const kWelcomeTableViewReusableIdentifier = @"welcomeTableView
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     switch (indexPath.row) {
         case 0:
+            [tableView deselectRowAtIndexPath:indexPath animated:YES];
             [self performSegueWithIdentifier:kFromWelcomeViewToDatabaseViewSegue sender:self];
             break;
         default:

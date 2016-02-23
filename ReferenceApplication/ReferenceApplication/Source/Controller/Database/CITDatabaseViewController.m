@@ -45,29 +45,45 @@
 - (IBAction)addClient:(id)sender {
     
     CITClient *client = [self.mainView prepareClientObject];
+    
     if (!client) {
         [self showFillAlert];
     } else {
-    
         typeof(self) __weak __block weakSelf = self;
-        
         [self.manager insertClient:client withCompletionBlock:^(BOOL success) {
             
             if (success) {
                 [weakSelf.clientsTableViewController addNewClient:client];
+                [weakSelf.mainView clearFields];
+            } else {
+                [self showInsertAlert];
             }
         }];
     }
 }
 
-- (void)showFillAlert {
+- (void)showInsertAlert {
 
-    UIAlertController* alert = [UIAlertController alertControllerWithTitle:NSLocalizedString(@"databaseExample.alert.title", @"OOPS")
-                                                                   message:NSLocalizedString(@"databaseExample.alert.message", @"Please, fill in all fields.")
+    [self showAlertWithTitle:NSLocalizedString(@"databaseExample.alert.title", @"OOPS")
+                     message:NSLocalizedString(@"databaseExample.alert.insertMessage", @"Error while inserting new Client.")];
+}
+
+- (void)showFillAlert {
+    
+    [self showAlertWithTitle:NSLocalizedString(@"databaseExample.alert.title", @"OOPS")
+                     message:NSLocalizedString(@"databaseExample.alert.fillMessage", @"Please, fill in all fields.")];
+}
+
+- (void)showAlertWithTitle:(NSString *)title
+                   message:(NSString *)message {
+    
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:title
+                                                                   message:message
                                                             preferredStyle:UIAlertControllerStyleAlert];
     
-    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
-                                                          handler:^(UIAlertAction * action) {}];
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:NSLocalizedString(@"databaseExample.alert.button", @"Ok")
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:nil];
     
     [alert addAction:defaultAction];
     [self presentViewController:alert animated:YES completion:nil];

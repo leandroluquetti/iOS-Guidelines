@@ -11,7 +11,7 @@
 
 @implementation CITDataAccess (Client)
 
-static NSString * const kInsertOrReplaceClient = @"INSERT OR REPLACE INTO client VALUES (?, ?, ?);";
+static NSString * const kInsertClient = @"INSERT INTO client VALUES (?, ?, ?);";
 static NSString * const kSelectAllClient = @"SELECT * FROM client;";
 
 + (void)insertRow:(CITClient *)entity withCompletionBlock:(CITDataAccessUpdateResponse)completion {
@@ -19,7 +19,7 @@ static NSString * const kSelectAllClient = @"SELECT * FROM client;";
     [databaseQueue inTransaction:^(FMDatabase *db, BOOL *rollback) {
         BOOL success = NO;
         
-        success = [db executeUpdate:kInsertOrReplaceClient withArgumentsInArray:@[entity.registerId,
+        success = [db executeUpdate:kInsertClient withArgumentsInArray:@[entity.registerId,
                                                                                entity.firstName,
                                                                                entity.surname]];
         

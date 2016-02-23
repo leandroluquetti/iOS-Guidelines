@@ -125,15 +125,15 @@
 		2B6D6F081C7CCA35002DAA16 /* CITDatabaseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6EFB1C7CCA35002DAA16 /* CITDatabaseSchema.m */; };
 		2B6D6F091C7CCA35002DAA16 /* CITDatabaseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6EFB1C7CCA35002DAA16 /* CITDatabaseSchema.m */; };
 		2B6D6F0A1C7CCA35002DAA16 /* CITDatabaseSchema.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6EFB1C7CCA35002DAA16 /* CITDatabaseSchema.m */; };
-		2B6D6F0D1C7CD066002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */; };
-		2B6D6F0E1C7CD066002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */; };
-		2B6D6F0F1C7CD066002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */; };
 		2B6D6F131C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */; };
 		2B6D6F141C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */; };
 		2B6D6F151C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */; };
 		2B6D6F1E1C7CE67F002DAA16 /* CITClientBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */; };
 		2B6D6F1F1C7CE67F002DAA16 /* CITClientBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */; };
 		2B6D6F201C7CE67F002DAA16 /* CITClientBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */; };
+		2B6D6F241C7CF7E1002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F231C7CF7E1002DAA16 /* CITKeychain.m */; };
+		2B6D6F251C7CF7E1002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F231C7CF7E1002DAA16 /* CITKeychain.m */; };
+		2B6D6F261C7CF7E1002DAA16 /* CITKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6D6F231C7CF7E1002DAA16 /* CITKeychain.m */; };
 		339952F580EA966E9B977260 /* libPods-ReferenceApplicationDev.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DEEA14BB8C26889968C9874F /* libPods-ReferenceApplicationDev.a */; };
 		620A9510F41050AC32E643ED /* libPods-ReferenceApplicationTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CCE91C5C5836B185326CED1 /* libPods-ReferenceApplicationTests.a */; };
 		6235AD8D86C58D065FE79065 /* libPods-ReferenceApplicationStage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A089FFCEF478FEFE5825E51 /* libPods-ReferenceApplicationStage.a */; };
@@ -237,12 +237,12 @@
 		2B6D6EF81C7CCA35002DAA16 /* CITDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITDatabaseQueue.m; sourceTree = "<group>"; };
 		2B6D6EFA1C7CCA35002DAA16 /* CITDatabaseSchema.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITDatabaseSchema.h; sourceTree = "<group>"; };
 		2B6D6EFB1C7CCA35002DAA16 /* CITDatabaseSchema.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITDatabaseSchema.m; sourceTree = "<group>"; };
-		2B6D6F0B1C7CD066002DAA16 /* CITKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CITKeychain.h; path = Keychain/CITKeychain.h; sourceTree = "<group>"; };
-		2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CITKeychain.m; path = Keychain/CITKeychain.m; sourceTree = "<group>"; };
 		2B6D6F111C7CE2D1002DAA16 /* CITDatabaseExampleManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CITDatabaseExampleManager.h; path = "ReferenceApplication/Source/Manager/Database Example/CITDatabaseExampleManager.h"; sourceTree = SOURCE_ROOT; };
 		2B6D6F121C7CE2D1002DAA16 /* CITDatabaseExampleManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CITDatabaseExampleManager.m; path = "ReferenceApplication/Source/Manager/Database Example/CITDatabaseExampleManager.m"; sourceTree = SOURCE_ROOT; };
 		2B6D6F1C1C7CE67F002DAA16 /* CITClientBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CITClientBO.h; path = Client/CITClientBO.h; sourceTree = "<group>"; };
 		2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CITClientBO.m; path = Client/CITClientBO.m; sourceTree = "<group>"; };
+		2B6D6F221C7CF7E1002DAA16 /* CITKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CITKeychain.h; sourceTree = "<group>"; };
+		2B6D6F231C7CF7E1002DAA16 /* CITKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CITKeychain.m; sourceTree = "<group>"; };
 		31A0785F8057906E0F4225E4 /* Pods-ReferenceApplicationTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationTests/Pods-ReferenceApplicationTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3248FA679E32B15AA6D9B422 /* Pods-ReferenceApplicationProd.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.debug.xcconfig"; sourceTree = "<group>"; };
 		4E67E99AB71D59895017B8F0 /* Pods-ReferenceApplicationProd.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReferenceApplicationProd.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReferenceApplicationProd/Pods-ReferenceApplicationProd.release.xcconfig"; sourceTree = "<group>"; };
@@ -432,7 +432,6 @@
 			isa = PBXGroup;
 			children = (
 				2B6D6EED1C7CCA35002DAA16 /* Database */,
-				2B6D6ED41C7CC3AA002DAA16 /* Keychain */,
 				2AE386041C52A19A001C8ED4 /* Service */,
 				2AE386101C52A1AA001C8ED4 /* Third Party */,
 			);
@@ -442,6 +441,7 @@
 		2AB64C721C4FD50500C878CE /* Security */ = {
 			isa = PBXGroup;
 			children = (
+				2B6D6F211C7CF7E1002DAA16 /* Keychain */,
 			);
 			path = Security;
 			sourceTree = "<group>";
@@ -704,15 +704,6 @@
 			name = Categories;
 			sourceTree = "<group>";
 		};
-		2B6D6ED41C7CC3AA002DAA16 /* Keychain */ = {
-			isa = PBXGroup;
-			children = (
-				2B6D6F0B1C7CD066002DAA16 /* CITKeychain.h */,
-				2B6D6F0C1C7CD066002DAA16 /* CITKeychain.m */,
-			);
-			name = Keychain;
-			sourceTree = "<group>";
-		};
 		2B6D6EED1C7CCA35002DAA16 /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -779,6 +770,15 @@
 				2B6D6F1D1C7CE67F002DAA16 /* CITClientBO.m */,
 			);
 			name = Client;
+			sourceTree = "<group>";
+		};
+		2B6D6F211C7CF7E1002DAA16 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				2B6D6F221C7CF7E1002DAA16 /* CITKeychain.h */,
+				2B6D6F231C7CF7E1002DAA16 /* CITKeychain.m */,
+			);
+			path = Keychain;
 			sourceTree = "<group>";
 		};
 		B73C988BBF134D1D2EF20A84 /* Frameworks */ = {
@@ -1172,7 +1172,6 @@
 				2AE385D81C52908F001C8ED4 /* CITBaseViewController.m in Sources */,
 				2AE3861E1C52A365001C8ED4 /* CITLoginManager.m in Sources */,
 				2B6D6EC71C7CC386002DAA16 /* UIButton+Additions.m in Sources */,
-				2B6D6F0F1C7CD066002DAA16 /* CITKeychain.m in Sources */,
 				2AE3863F1C54F4A6001C8ED4 /* CITWelcomeViewController.m in Sources */,
 				2B6D6ECA1C7CC386002DAA16 /* UIColor+Additions.m in Sources */,
 				2AE386231C540C36001C8ED4 /* CITTextField.m in Sources */,
@@ -1204,6 +1203,7 @@
 				2AE385D21C528D58001C8ED4 /* CITUser.m in Sources */,
 				2B6D6F151C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */,
 				2B6D6F071C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
+				2B6D6F261C7CF7E1002DAA16 /* CITKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1224,7 +1224,6 @@
 				2AE385D61C52908F001C8ED4 /* CITBaseViewController.m in Sources */,
 				2AE3861C1C52A365001C8ED4 /* CITLoginManager.m in Sources */,
 				2B6D6EC51C7CC386002DAA16 /* UIButton+Additions.m in Sources */,
-				2B6D6F0D1C7CD066002DAA16 /* CITKeychain.m in Sources */,
 				2AE3863D1C54F4A6001C8ED4 /* CITWelcomeViewController.m in Sources */,
 				2B6D6EC81C7CC386002DAA16 /* UIColor+Additions.m in Sources */,
 				2AE386211C540C36001C8ED4 /* CITTextField.m in Sources */,
@@ -1256,6 +1255,7 @@
 				2AE385D01C528D58001C8ED4 /* CITUser.m in Sources */,
 				2B6D6F131C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */,
 				2B6D6F051C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
+				2B6D6F241C7CF7E1002DAA16 /* CITKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1268,7 +1268,6 @@
 				2AE385D71C52908F001C8ED4 /* CITBaseViewController.m in Sources */,
 				2AE3861D1C52A365001C8ED4 /* CITLoginManager.m in Sources */,
 				2B6D6EC61C7CC386002DAA16 /* UIButton+Additions.m in Sources */,
-				2B6D6F0E1C7CD066002DAA16 /* CITKeychain.m in Sources */,
 				2AE3863E1C54F4A6001C8ED4 /* CITWelcomeViewController.m in Sources */,
 				2B6D6EC91C7CC386002DAA16 /* UIColor+Additions.m in Sources */,
 				2AE386221C540C36001C8ED4 /* CITTextField.m in Sources */,
@@ -1300,6 +1299,7 @@
 				2AE385D11C528D58001C8ED4 /* CITUser.m in Sources */,
 				2B6D6F141C7CE2D1002DAA16 /* CITDatabaseExampleManager.m in Sources */,
 				2B6D6F061C7CCA35002DAA16 /* CITDatabaseQueue.m in Sources */,
+				2B6D6F251C7CF7E1002DAA16 /* CITKeychain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

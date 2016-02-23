@@ -17,6 +17,13 @@
 "welcomeScreen.item.database" = "Database example";
 
 /*databaseExample*/
+"databaseExample.placeholder.firstname" = "First Name";
+"databaseExample.placeholder.surname" = "Surname";
+"databaseExample.placeholder.id" = "Identifier";
+"databaseExample.button.add" = "ADD";
 "databaseExample.alert.title" = "OOPS!";
-"databaseExample.alert.message" = "Please, fill in all fields";
+"databaseExample.alert.fillMessage" = "Please, fill in all fields.";
+"databaseExample.alert.insertMessage" = "Error while insert new Client.";
+"databaseExample.alert.button" = "Ok";
+
 

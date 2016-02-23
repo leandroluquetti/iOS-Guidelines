@@ -14,5 +14,6 @@
 
 - (BOOL)textFieldIsEqualToClientsIdField:(UITextField *)textField;
 - (CITClient *)prepareClientObject;
+- (void)clearFields;
 
 @end
