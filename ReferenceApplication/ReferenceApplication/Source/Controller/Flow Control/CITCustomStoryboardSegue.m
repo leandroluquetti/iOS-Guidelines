@@ -8,8 +8,8 @@
 
 /**
  *  Class responsible to control application flow and transition.
- *  We shouldn't import ViewControllers inside ViewControllers unless if it be part of their responsability.
- *  Should be create one UIStoryboardSegue subclass for each Storyboard
+ *  We shouldn't import ViewControllers inside ViewControllers unless if it is part of their responsability.
+ *  Should be created one UIStoryboardSegue subclass for each Storyboard
  */
 
 #import "CITCustomStoryboardSegue.h"
