@@ -59,13 +59,13 @@ static NSString * const kEndPointVersion = @"1";
 
 - (void)configureSecurityPolicy {
     
-    NSURL *myCertificateURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"parse.com"
-                                                                       withExtension:@"der"];
-    NSData *myCertificateData = [NSData dataWithContentsOfURL:myCertificateURL];
+    NSSet *certificates = [AFSecurityPolicy certificatesInBundle:[NSBundle mainBundle]];
     
-    AFSecurityPolicy *securityPolicy  = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate
-                                                         withPinnedCertificates:[NSSet setWithObject:myCertificateData]];
-    self.securityPolicy = securityPolicy;
+    if (certificates.count > 0) {
+        AFSecurityPolicy *securityPolicy  = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate
+                                                             withPinnedCertificates:certificates];
+        self.securityPolicy = securityPolicy;    
+    }
 }
 
 
