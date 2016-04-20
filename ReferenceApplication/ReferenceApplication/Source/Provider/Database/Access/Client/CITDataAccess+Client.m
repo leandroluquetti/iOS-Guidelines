@@ -8,7 +8,6 @@
 
 #import "CITDataAccess+Client.h"
 #import "CITClient.h"
-#import "CITLogging.h"
 
 @implementation CITDataAccess (Client)
 

@@ -32,6 +32,7 @@
 + (CITDatabaseProvider *)sharedProvider;
 + (void)addMigrationSchema:(id<CITDatabaseSchemaMigration>)databaseSchemaMigration;
 - (void)deleteCurrentDatabase;
++ (void)enableCrypto:(BOOL)enable;
 - (CITDatabaseQueue *) databaseQueue;
 - (void)setup;
 

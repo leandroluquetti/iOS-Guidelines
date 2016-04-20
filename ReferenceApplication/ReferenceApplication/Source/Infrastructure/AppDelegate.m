@@ -18,9 +18,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
     [CITDatabaseProvider registerDatabase:@"database"
                                  forUser:@"UserTest"
                       withDatabaseSchema:[CITDatabaseSchema new]];
+    
+    [CITDatabaseProvider enableCrypto:YES];
+    
     [[CITDatabaseProvider sharedProvider] setup];
     
     [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound) categories:nil]];
