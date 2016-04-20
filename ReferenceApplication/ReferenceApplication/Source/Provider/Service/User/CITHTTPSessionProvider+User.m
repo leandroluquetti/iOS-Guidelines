@@ -22,6 +22,7 @@
     
     [self GET:loginProfileUser
    parameters:parameters
+     progress:nil
       success:success
       failure:^(NSURLSessionDataTask *task, NSError *error) {
           

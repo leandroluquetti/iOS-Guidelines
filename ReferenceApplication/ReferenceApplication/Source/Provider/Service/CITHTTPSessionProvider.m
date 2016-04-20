@@ -34,19 +34,38 @@ static NSString * const kEndPointVersion = @"1";
 #pragma mark - Override
 
 - (instancetype)initWithBaseURL:(NSURL *)url {
+    
     self = [super initWithBaseURL:url];
     
     if (self) {
+        [self configureSecurityPolicy];
+        
         self.requestSerializer = [AFJSONRequestSerializer serializer];
+    
         [self.requestSerializer setValue:@"oUZjvMyLohNCAlAmoi8rWQdUq1MXyDNxHvjTwVUM"
-                      forHTTPHeaderField:@"X-Parse-Application-Id"];
+                       forHTTPHeaderField:@"X-Parse-Application-Id"];
         [self.requestSerializer setValue:@"lr9YZR4n4eJ0DGTlp46rxKgWdlF2V4k3L2djCIoL"
                       forHTTPHeaderField:@"X-Parse-REST-API-Key"];
         
         self.responseSerializer = [AFJSONResponseSerializer serializer];
+        
     }
     
     return self;
+}
+
+
+#pragma mark - SSL Pinning
+
+- (void)configureSecurityPolicy {
+    
+    NSURL *myCertificateURL = [[NSBundle bundleForClass:[self class]] URLForResource:@"parse.com"
+                                                                       withExtension:@"der"];
+    NSData *myCertificateData = [NSData dataWithContentsOfURL:myCertificateURL];
+    
+    AFSecurityPolicy *securityPolicy  = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate
+                                                         withPinnedCertificates:[NSSet setWithObject:myCertificateData]];
+    self.securityPolicy = securityPolicy;
 }
 
 
