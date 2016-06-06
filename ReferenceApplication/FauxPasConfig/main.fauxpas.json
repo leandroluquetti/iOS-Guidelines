@@ -3,7 +3,7 @@
     // Xcode target to check (String)
     "target": "ReferenceApplicationDev",
     // Xcode build configuration to check (String)
-    "buildConfig": "Release",
+    "buildConfig": "Debug",
     // Rules to apply (Array of strings)
     //"rules": [],
     // Rules to apply only (Array of strings)
@@ -11,7 +11,7 @@
     // Rule tags to apply (Array of strings)
     //"ruleTags": ["Recommended"],
     // Rules to exclude (Array of strings)
-    //"excludedRules": [],
+    "excludedRules": ["FileRefIgnoredInVCS"],
     // Prefixes of files to exclude (Array of strings)
     //"fileExclusionPrefixes": [],
     // Xcode groups to exclude (Array of strings)
