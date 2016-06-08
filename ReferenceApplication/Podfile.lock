@@ -14,6 +14,9 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - Crashlytics (3.7.0):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.7)
   - FMDB/SQLCipher (2.6.2):
     - SQLCipher
   - Reachability (3.2)
@@ -27,6 +30,8 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking (~> 3.0)
+  - Crashlytics
+  - Fabric
   - FMDB/SQLCipher
   - Reachability
   - SSKeychain
@@ -34,10 +39,14 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  Crashlytics: c3a2333dea9e2733d2777f730910321fc9e25c0d
+  Fabric: caf7580c725e64db144f610ac65cd60956911dc7
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SQLCipher: 4c768761421736a247ed6cf412d9045615d53dff
   SSKeychain: 04c4ec40f4c3deda524e269bc76e5f30e638a174
   UIView+Shake: a7ea3fd810a64297cb56b7cbdbd2b0fd5f964a6e
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 275f3e60ab0aca289a38bd43192caa61566d8051
+
+COCOAPODS: 1.0.1

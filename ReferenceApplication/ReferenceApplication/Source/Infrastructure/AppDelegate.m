@@ -9,6 +9,8 @@
 #import "AppDelegate.h"
 #import "CITDatabaseSchema.h"
 #import "CITDatabaseProvider.h"
+#import <Fabric/Fabric.h>
+#import <Crashlytics/Crashlytics.h>
 
 @interface AppDelegate ()
 
@@ -30,6 +32,8 @@
     [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:(UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound) categories:nil]];
     [[UIApplication sharedApplication] registerForRemoteNotifications];
 
+    [Fabric with:@[[Crashlytics class]]];
+    
     return YES;
 }
 

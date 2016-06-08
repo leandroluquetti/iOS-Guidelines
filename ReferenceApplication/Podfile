@@ -8,6 +8,8 @@ def default_pods
     pod 'SSKeychain'
     pod 'Reachability'
     pod 'UIView+Shake'
+    pod 'Fabric'
+    pod 'Crashlytics'
 end
 
 target 'ReferenceApplicationDev' do
